@@ -116,7 +116,7 @@ inoremap {}     {}
 " colorscheme
 "
 set t_Co=256
-colorscheme ninjaloot
+colorscheme jellybeans
 
 " ide functionality
 set completeopt=longest,menuone

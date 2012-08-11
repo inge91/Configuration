@@ -7,7 +7,7 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 
-URxvt.font:xft:Inconsolata-11
+URxvt.font:xft:Terminus-11
 Xft.antialias:  true 
 Xft.hinting:    true
 Xft.hintstyle:  full
