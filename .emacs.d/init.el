@@ -26,8 +26,8 @@
 ;; setting the font and theme
 (add-to-list 'custom-theme-load-path
 	     "/home/maarten/.emacs.d/themes")
-(set-face-attribute 'default nil :font "Inconsolata-11")
-(load-theme 'monokai t)
+(set-face-attribute 'default nil :font "Terminus-11")
+(load-theme 'tomorrow-night t)
 
 ;; gotta have Vim keys
 (require 'evil)
@@ -43,8 +43,8 @@
 (setq TeX-PDF-mode t)
 
 ;; python modes
-(require 'pymacs)
-(pymacs-load "ropemacs" "rope-")
+;;(require 'pymacs)
+;;(pymacs-load "ropemacs" "rope-")
 
 ;; nicer autocomplete
 (require 'auto-complete-config)
