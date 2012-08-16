@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/maarten/.config'
 let g:netrw_dirhist_2='/home/maarten/Projects/DNT/Development/tools/yay.txt'
 let g:netrw_dirhist_3='/home/maarten/Projects/DNT/Development/naoqi/lib'
+let g:netrw_dirhist_4='/home/maarten/Projects/Tweedejaars-project/Cpp/.qi'
+let g:netrw_dirhist_5='/home/maarten/downloads/helloworld/.qi'
