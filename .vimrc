@@ -37,16 +37,7 @@ inoremap {}     {}
 " colorscheme
 "
 set t_Co=256
-colorscheme jellybeans
-
-" ide-like in autocomplete functionality
-set completeopt=longest,menuone
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-
-inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+colorscheme Tomorrow-Night
 
 " set gvim font
 set gfn=Terminus\ 11
@@ -140,5 +131,5 @@ set laststatus=2 " Always show the statusline
 
 " clang_complete
 let g:clang_use_library = 1
-let g:clang_library_path = "/usr/lib/llvm/"
+let g:clang_library_path = "/usr/lib/"
 let g:clang_user_options = '|| exit 0'
