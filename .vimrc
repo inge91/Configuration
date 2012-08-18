@@ -112,7 +112,8 @@ Bundle 'Lokaltog/vim-powerline'
 
 " vim-scripts repos
 " Bundle 'FuzzyFinder'
-"
+Bundle "a.vim"
+
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
 " ...
