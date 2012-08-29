@@ -8,3 +8,5 @@ ln -s $(pwd)/.emacs ~
 ln -s $(pwd)/.Xresources ~
 
 ln -s $(pwd)/.tmux.conf ~
+
+ln -s $(pwd)/.fonts ~
