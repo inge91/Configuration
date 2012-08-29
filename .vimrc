@@ -40,7 +40,7 @@ set t_Co=256
 colorscheme Tomorrow-Night
 
 " set gvim font
-set gfn=Terminus\ 11
+set gfn=monaco\ 10
 
 " set no search highlighting
 set nohlsearch
@@ -100,6 +100,7 @@ Bundle 'sjl/gundo.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'msanders/snipmate.vim'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'spolu/dwm.vim'
 
 " vim-scripts repos
 " Bundle 'FuzzyFinder'
@@ -127,7 +128,7 @@ noremap <F3> :TagbarToggle<CR>
 nnoremap <F4> :GundoToggle<CR>
 
 " powerline settings
-let g:Powerline_symbols='compatible'
+let g:Powerline_symbols='fancy'
 set laststatus=2 " Always show the statusline
 
 " clang_complete
