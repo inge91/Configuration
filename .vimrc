@@ -68,9 +68,6 @@ set linebreak
 nnoremap <SPACE> <Nop>
 let mapleader=" ""
 
-" remap <Leader>w to be like <Control>w for window controls
-nnoremap <Leader>w <C-w>
-
 " persistent undo
 set undodir=~/.vim/undodir
 set undofile
@@ -128,7 +125,7 @@ noremap <F3> :TagbarToggle<CR>
 nnoremap <F4> :GundoToggle<CR>
 
 " powerline settings
-let g:Powerline_symbols='fancy'
+let g:Powerline_symbols='compatible'
 set laststatus=2 " Always show the statusline
 
 " clang_complete
