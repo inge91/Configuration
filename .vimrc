@@ -40,7 +40,7 @@ set t_Co=256
 colorscheme Tomorrow-Night
 
 " set gvim font
-set gfn=monaco\ 10
+set gfn=tamsyn\ 13
 
 " set no search highlighting
 set nohlsearch
@@ -64,14 +64,14 @@ set guioptions-=e
 set textwidth=80
 set linebreak
 
-" remap the space bar to <Leader>
-nnoremap <SPACE> <Nop>
-let mapleader=" ""
-
 " persistent undo
 set undodir=~/.vim/undodir
 set undofile
 
+" align at the same level when there's unclosed parenthesis, as in:
+" foo(argument_1,
+"     argument_2)
+set cino=(0
 
 
 
