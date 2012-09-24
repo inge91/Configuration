@@ -39,8 +39,12 @@ inoremap {}     {}
 set t_Co=256
 colorscheme Tomorrow-Night
 
+if has('gui_running')
+    colorscheme smyck
+endif
+
 " set gvim font
-set gfn=tamsyn\ 13
+set gfn=terminus\ 11
 
 " set no search highlighting
 set nohlsearch
@@ -101,7 +105,8 @@ Bundle 'spolu/dwm.vim'
 
 " vim-scripts repos
 " Bundle 'FuzzyFinder'
-Bundle "a.vim"
+Bundle 'a.vim'
+Bundle 'mayansmoke'
 
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
