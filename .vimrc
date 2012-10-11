@@ -40,11 +40,11 @@ set t_Co=256
 colorscheme Tomorrow-Night
 
 if has('gui_running')
-    colorscheme smyck
+    colorscheme pyte
 endif
 
 " set gvim font
-set gfn=terminus\ 11
+set gfn=DejaVu\ Sans\ Mono\ 10
 
 " set no search highlighting
 set nohlsearch
@@ -99,9 +99,9 @@ Bundle 'majutsushi/tagbar'
 Bundle 'Raimondi/delimitMate'
 Bundle 'sjl/gundo.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'msanders/snipmate.vim'
+Bundle 'SirVer/ultisnips'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'spolu/dwm.vim'
+Bundle 'godlygeek/tabular'
 
 " vim-scripts repos
 " Bundle 'FuzzyFinder'
@@ -137,3 +137,6 @@ set laststatus=2 " Always show the statusline
 let g:clang_use_library = 1
 let g:clang_library_path = "/usr/lib/"
 let g:clang_user_options = '|| exit 0'
+
+let g:clang_snippets = 1
+let g:clang_snippets_engine = 'ultisnips'
