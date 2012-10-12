@@ -26,7 +26,7 @@
 ;; setting the font and theme
 (add-to-list 'custom-theme-load-path
              "/home/maarten/.emacs.d/themes")
-(set-face-attribute 'default nil :font "Terminus-11")
+(set-face-attribute 'default nil :font "Monaco-10")
 (load-theme 'tomorrow-night t)
 
 ;; gotta have Vim keys

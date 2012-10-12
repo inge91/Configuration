@@ -40,7 +40,7 @@ set t_Co=256
 colorscheme Tomorrow-Night
 
 if has('gui_running')
-    colorscheme pyte
+    colorscheme biogoo
 endif
 
 " set gvim font
@@ -51,6 +51,7 @@ set nohlsearch
 
 " omnicomplete
 set ofu=syntaxcomplete#Complete
+set completeopt=longest,menuone
 
 " no backup files
 set nobackup
@@ -140,3 +141,4 @@ let g:clang_user_options = '|| exit 0'
 
 let g:clang_snippets = 1
 let g:clang_snippets_engine = 'ultisnips'
+let g:clang_close_preview = 1
