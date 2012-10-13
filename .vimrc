@@ -40,7 +40,7 @@ set t_Co=256
 colorscheme Tomorrow-Night
 
 if has('gui_running')
-    colorscheme biogoo
+    colorscheme vylight
 endif
 
 " set gvim font
@@ -51,7 +51,7 @@ set nohlsearch
 
 " omnicomplete
 set ofu=syntaxcomplete#Complete
-set completeopt=longest,menuone
+"set completeopt=longest,menuone
 
 " no backup files
 set nobackup
@@ -103,6 +103,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'SirVer/ultisnips'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
+Bundle 'Shougo/neocomplcache'
 
 " vim-scripts repos
 " Bundle 'FuzzyFinder'
