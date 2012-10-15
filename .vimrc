@@ -109,6 +109,7 @@ Bundle 'Shougo/neocomplcache'
 " Bundle 'FuzzyFinder'
 Bundle 'a.vim'
 Bundle 'mayansmoke'
+Bundle 'AutoComplPop'
 
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
