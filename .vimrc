@@ -29,10 +29,10 @@ set shiftwidth=4
 set softtabstop=4 " makes the spaces feel like real tabs
 
 " great brace behaviour
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {
-inoremap {}     {}
+" inoremap {      {}<Left>
+" inoremap {<CR>  {<CR>}<Esc>O
+" inoremap {{     {
+" inoremap {}     {}
 
 " colorscheme
 "
@@ -40,11 +40,11 @@ set t_Co=256
 colorscheme Tomorrow-Night
 
 if has('gui_running')
-    colorscheme vylight
+    colorscheme smyck
 endif
 
 " set gvim font
-set gfn=DejaVu\ Sans\ Mono\ 10
+set gfn=Monaco\ 10
 
 " set no search highlighting
 set nohlsearch
@@ -104,12 +104,14 @@ Bundle 'SirVer/ultisnips'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
 Bundle 'Shougo/neocomplcache'
+Bundle 'kien/rainbow_parentheses.vim'
 
 " vim-scripts repos
 " Bundle 'FuzzyFinder'
 Bundle 'a.vim'
 Bundle 'mayansmoke'
 Bundle 'AutoComplPop'
+Bundle 'VimClojure'
 
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
