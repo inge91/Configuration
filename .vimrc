@@ -36,7 +36,6 @@ set softtabstop=4 " makes the spaces feel like real tabs
 
 " colorscheme
 "
-set t_Co=256
 colorscheme Tomorrow-Night
 
 if has('gui_running')
@@ -44,7 +43,7 @@ if has('gui_running')
 endif
 
 " set gvim font
-set gfn=Monaco\ 10
+set gfn=DejaVu\ Sans\ Mono\ 10
 
 " set no search highlighting
 set nohlsearch
@@ -104,13 +103,13 @@ Bundle 'SirVer/ultisnips'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
 Bundle 'Shougo/neocomplcache'
+Bundle 'osyo-manga/neocomplcache-clang_complete'
 Bundle 'kien/rainbow_parentheses.vim'
 
 " vim-scripts repos
 " Bundle 'FuzzyFinder'
 Bundle 'a.vim'
 Bundle 'mayansmoke'
-Bundle 'AutoComplPop'
 Bundle 'VimClojure'
 
 " non github repos
@@ -124,7 +123,6 @@ filetype plugin indent on
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""" Plugin settings
-
 
 
 " nerdtree and taglist toggle
@@ -146,3 +144,31 @@ let g:clang_user_options = '|| exit 0'
 let g:clang_snippets = 1
 let g:clang_snippets_engine = 'ultisnips'
 let g:clang_close_preview = 1
+
+" neocomplcache
+"
+" Use neocomplcache.
+let g:neocomplcache_enable_at_startup = 1
+" Use smartcase.
+let g:neocomplcache_enable_smart_case = 1
+" Use camel case completion.
+let g:neocomplcache_enable_camel_case_completion = 1
+" Use underbar completion.
+let g:neocomplcache_enable_underbar_completion = 1
+" Set minimum syntax keyword length.
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+" <CR>: close popup and save indent.
+inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
+" tab complete
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" <C-h>, <BS>: close popup and delete backword char.
+inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+
+" use neocomplcache & clang_complete
+" add neocomplcache option
+let g:neocomplcache_force_overwrite_completefunc=1
+
+" add clang_complete option
+let g:clang_complete_auto=1
