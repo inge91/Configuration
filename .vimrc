@@ -124,6 +124,9 @@ filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""" Plugin settings
 
+" bind the buftag plugin of CtrlP
+noremap <C-p> :CtrlP<CR>
+noremap <C-o> :CtrlPBufTag<CR>
 
 " nerdtree and taglist toggle
 noremap <F2> :NERDTreeToggle<CR>
