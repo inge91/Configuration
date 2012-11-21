@@ -98,13 +98,11 @@ Bundle 'SirVer/ultisnips'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
 Bundle 'mileszs/ack.vim'
-Bundle 'ervandew/supertab'
 Bundle 'w0ng/vim-hybrid'
+Bundle 'lukaszkorecki/workflowish'
 
 " vim-scripts repos
 " Bundle 'FuzzyFinder'
-Bundle 'a.vim'
-Bundle 'mayansmoke'
 Bundle 'VimClojure'
 
 " non github repos
@@ -126,7 +124,7 @@ if has('gui_running')
 endif
 
 " set gvim font
-set gfn=dejavu\ sans\ mono\ 10
+set gfn=dejavu\ sans\ mono\ 9
 
 
 

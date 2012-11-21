@@ -7,10 +7,10 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 
-URxvt.font:xft:dejavu sans mono-10
+URxvt.font:xft:dejavu sans mono-9
 Xft.antialias:  true 
 Xft.hinting:    true
-Xft.hintstyle:  full
+Xft.hintstyle:  hintslight
 Xft.rgba:   rgb
 Xft.dpi:    96
 
@@ -28,30 +28,30 @@ Xft.dpi:    96
 #define t_blue #81a2be
 #define t_purple #b294bb
 
-! terminal colours
-*background: t_background
-*foreground: t_comment
-! black
-*color0: t_current_line
-*color8: t_selection
-! red
-*color1: #A54242
-*color9: t_red
-! green
-*color2: #8C9440
-*color10: t_green
-! yellow
-*color3: t_orange
-*color11: t_yellow
-! blue
-*color4: #5F819D
-*color12: t_blue
-! magenta
-*color5: #85678F
-*color13: t_purple
-! cyan
-*color6: #5E8D87
-*color14: t_aqua
-! white
-*color7: t_comment
-*color15: t_foreground
+! [ urxvt ]
+*foreground: #D7D0C7
+*background: #151515
+
+URxvt.color0:	#131621
+URxvt.color8:	#262b40
+
+URxvt.color1:	#c2465f
+URxvt.color9:	#ed3764
+
+URxvt.color2:	#4cad64
+URxvt.color10:	#25db4f
+
+URxvt.color3:	#b8904c
+URxvt.color11:	#db9f40
+
+URxvt.color4:	#5085a8
+URxvt.color12:	#41a0db
+
+URxvt.color5:	#c24697
+URxvt.color13:	#ff52c5
+
+URxvt.color6: #4ea7ad
+URxvt.color14:  #2ac9d1
+
+URxvt.color7:	#797e8f
+URxvt.color15:	#bbbec9
