@@ -88,6 +88,7 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'majutsushi/tagbar'
