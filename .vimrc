@@ -28,12 +28,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4 " makes the spaces feel like real tabs
 
-" great brace behaviour
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {
-inoremap {}     {}
-
 " set no search highlighting
 set nohlsearch
 
