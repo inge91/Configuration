@@ -94,6 +94,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'mileszs/ack.vim'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'jiangmiao/auto-pairs'
+Bundle 'xaviershay/tslime.vim'
 
 " vim-scripts repos
 " Bundle 'FuzzyFinder'
@@ -118,7 +119,7 @@ if has('gui_running')
 endif
 
 " set gvim font
-set gfn=dejavu\ sans\ mono\ 9
+set gfn=Envy\ Code\ R\ 10
 
 
 

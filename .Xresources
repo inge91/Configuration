@@ -7,12 +7,15 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 
-URxvt.font:xft:dejavu sans mono-9
-Xft.antialias:  true 
-Xft.hinting:    true
-Xft.hintstyle:  hintslight
-Xft.rgba:   rgb
-Xft.dpi:    96
+URxvt.font:xft:monospace-10
+
+ Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.dpi: 96
+Xft.rgba: rgb
 
 ! colours for hybrid.vim (copied from Tomorrow-Night)
 #define t_background #1d1f21
