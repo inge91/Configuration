@@ -92,7 +92,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
 Bundle 'mileszs/ack.vim'
-Bundle 'w0ng/vim-hybdrid'
+Bundle 'w0ng/vim-hybrid'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'xaviershay/tslime.vim'
 
