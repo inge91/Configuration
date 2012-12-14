@@ -7,7 +7,7 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 
-URxvt.font:xft:monospace-10
+URxvt.font:xft:Dina-11
 
  Xft.autohint: 0
 Xft.lcdfilter: lcddefault
@@ -31,35 +31,21 @@ Xft.rgba: rgb
 #define t_blue #81a2be
 #define t_purple #b294bb
 
-! [ urxvt ]
-! terminal colours
-*foreground:#a0a0a0
-*background:#1b1d1e
-
-!molokai inspired colors
-
-!black
-*color0:    #1b1d1e
-*color8:    #505354
-!red
-*color1:    #f92672
-*color9:    #ff5995
-!green
-*color2:    #82b414
-*color10:   #b6e354
-!yellow
-*color3:    #fd971f
-*color11:   #feed6c
-!blue
-*color4:    #56c2d6
-*color12:   #8cedff
-!magenta
-*color5:    #8c54fe
-*color13:   #9e6ffe
-!cyan
-*color6:    #465457
-*color14:   #899ca1
-!white
-*color7:    #ccccc6
-*color15:   #f8f8f2
-
+URxvt.foreground: #C8C8C8
+URxvt.background: #323232
+URxvt.color0:     #2E3436
+URxvt.color1:     #CC0000
+URxvt.color2:     #4E9A06
+URxvt.color3:     #C4A000
+URxvt.color4:     #3465A4
+URxvt.color5:     #75507B
+URxvt.color6:     #06989A
+URxvt.color7:     #D3D7CF
+URxvt.color8:     #555753
+URxvt.color9:     #EF2929
+URxvt.color10:    #8AE234
+URxvt.color11:    #FCE94F
+URxvt.color12:    #729FCF
+URxvt.color13:    #AD7FA8
+URxvt.color14:    #34E2E2
+URxvt.color15:    #EEEEEC

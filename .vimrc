@@ -92,13 +92,14 @@ Bundle 'SirVer/ultisnips'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
 Bundle 'mileszs/ack.vim'
-Bundle 'w0ng/vim-hybrid'
+Bundle 'w0ng/vim-hybdrid'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'xaviershay/tslime.vim'
 
 " vim-scripts repos
 " Bundle 'FuzzyFinder'
 Bundle 'VimClojure'
+Bundle 'LaTeX-Box'
 
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
@@ -112,14 +113,14 @@ filetype plugin indent on
 
 " colorscheme
 "
-colorscheme hybrid
+colorscheme tango2
 
 if has('gui_running')
-    colorscheme hybrid
+    colorscheme tango2
 endif
 
 " set gvim font
-set gfn=Envy\ Code\ R\ 10
+set gfn=Dina\ 11
 
 
 
