@@ -92,7 +92,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
 Bundle 'mileszs/ack.vim'
-Bundle 'w0ng/vim-hybdrid'
+Bundle 'w0ng/vim-hybrid'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'xaviershay/tslime.vim'
 
@@ -113,10 +113,10 @@ filetype plugin indent on
 
 " colorscheme
 "
-colorscheme tango2
+colorscheme xoria256
 
 if has('gui_running')
-    colorscheme tango2
+    colorscheme xoria256
 endif
 
 " set gvim font

@@ -9,9 +9,9 @@ ln -s $(pwd)/.tmux.conf ~
 
 ln -s $(pwd)/.fonts ~
 
-# check if there's already a .config/awesome folder, and if not create it
-if [ ! -d "~/.config/awesome" ]; then
-    mkdir -p ~/.config/awesome
+# check if there's already a ~/.config/folder, and if not create it
+if [ ! -d "~/.config/" ]; then
+    mkdir -p ~/.config/
 fi
 
-ln -s $(pwd)/rc.lua ~/.config/awesome/
+ln -s $(pwd)/awesome ~/.config/

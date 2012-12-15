@@ -7,7 +7,7 @@ require("beautiful")
 -- Notification library
 require("naughty")
 -- dynamic tagging
--- require("eminent")
+require("eminent")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -36,7 +36,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+beautiful.init("/home/maarten/.config/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
@@ -168,8 +168,8 @@ for s = 1, screen.count() do
             layout = awful.widget.layout.horizontal.leftright
         },
         mylayoutbox[s],
-        mytextclock,
         s == 1 and mysystray or nil,
+        mytextclock,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
     }
@@ -320,7 +320,7 @@ awful.rules.rules = {
     { rule = { },
       properties = { border_width = beautiful.border_width,
                      border_color = beautiful.border_normal,
-                     size_hints_honor = false,
+                     size_hints_honor = true,
                      focus = true,
                      keys = clientkeys,
                      buttons = clientbuttons } },
@@ -378,7 +378,7 @@ run_once("xfce4-power-manager")
 run_once("xfce4-volumed")
 run_once("nm-applet")
 awful.util.spawn_with_shell("xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &")
-awful.util.spawn_with_shell("pgrep -f -u $USER -x " .. "redshift" .. " || (" .. "redshift -l 52.3389926:4.9591888 -m vidmode &" .. ")")
+--awful.util.spawn_with_shell("pgrep -f -u $USER -x " .. "redshift" .. " || (" .. "redshift -l 52.3389926:4.9591888 -m vidmode &" .. ")")
 
 awful.util.spawn_with_shell("synclient HorizTwoFingerScroll=1")
 awful.util.spawn_with_shell("xset r rate 250 25")
