@@ -113,14 +113,14 @@ filetype plugin indent on
 
 " colorscheme
 "
-colorscheme xoria256
+colorscheme Tomorrow-Night
 
 if has('gui_running')
-    colorscheme xoria256
+    colorscheme Tomorrow-Night
 endif
 
 " set gvim font
-set gfn=Dina\ 11
+set gfn=Terminus\ 11
 
 
 
