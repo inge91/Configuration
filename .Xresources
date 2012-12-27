@@ -7,7 +7,7 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 
-URxvt.font:xft:Dina-11
+URxvt.font:xft:Terminus-11
 
  Xft.autohint: 0
 Xft.lcdfilter: lcddefault
@@ -17,35 +17,45 @@ Xft.antialias: 1
 Xft.dpi: 96
 Xft.rgba: rgb
 
-! colours for hybrid.vim (copied from Tomorrow-Night)
-#define t_background #1d1f21
-#define t_current_line #282a2e
-#define t_selection #373b41
-#define t_foreground #c5c8c6
-#define t_comment #969896
-#define t_red #cc6666
-#define t_orange #de935f
-#define t_yellow #f0c674
-#define t_green #b5bd68
-#define t_aqua #8abeb7
-#define t_blue #81a2be
-#define t_purple #b294bb
+! Tomorrow Night
 
-URxvt.foreground: #C8C8C8
-URxvt.background: #323232
-URxvt.color0:     #2E3436
-URxvt.color1:     #CC0000
-URxvt.color2:     #4E9A06
-URxvt.color3:     #C4A000
-URxvt.color4:     #3465A4
-URxvt.color5:     #75507B
-URxvt.color6:     #06989A
-URxvt.color7:     #D3D7CF
-URxvt.color8:     #555753
-URxvt.color9:     #EF2929
-URxvt.color10:    #8AE234
-URxvt.color11:    #FCE94F
-URxvt.color12:    #729FCF
-URxvt.color13:    #AD7FA8
-URxvt.color14:    #34E2E2
-URxvt.color15:    #EEEEEC
+!MISC
+URxvt.background:  #262626
+URxvt.foreground:  #A8A8A8
+
+URxvt.colorBD:     #9B8AA8
+URxvt.colorIT:     #9B8AA8
+URxvt.colorUL:     #B29EB8
+
+!BLK
+URxvt.color0:      #404040
+URxvt.color8:      #767676
+
+!WHT
+URxvt.color7:      #D0D0D0
+URxvt.color15:     #FFFFFF
+
+!RED
+URxvt.color1:  #D0689D
+URxvt.color9:  #FFA0D5
+
+!GRN
+URxvt.color2:  #5E9A34
+URxvt.color10: #95D16B
+
+!YEL
+URxvt.color3:  #AE8250
+URxvt.color11: #E4B885
+
+!BLU
+URxvt.color4:  #698FC2
+URxvt.color12: #9EC5F9
+
+!MAG
+URxvt.color5:  #B171DC
+URxvt.color13: #E8A8FF
+
+!CYN
+URxvt.color6:  #2E9E6C
+URxvt.color14: #6CD5A3
+
