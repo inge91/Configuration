@@ -6,10 +6,11 @@ URxvt*scrollWithBuffer:     true
 URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
+URxvt.urgentOnBell: true
 
 URxvt.font:xft:Terminus-11
 
- Xft.autohint: 0
+Xft.autohint: 0
 Xft.lcdfilter: lcddefault
 Xft.hintstyle: hintfull
 Xft.hinting: 1
