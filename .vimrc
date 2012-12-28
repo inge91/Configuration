@@ -143,7 +143,7 @@ set laststatus=2 " Always show the statusline
 
 " clang_complete
 let g:clang_use_library = 1
-let g:clang_library_path = "/usr/lib/"
+let g:clang_library_path = "/usr/lib/llvm"
 let g:clang_user_options = '|| exit 0'
 
 let g:clang_snippets = 1

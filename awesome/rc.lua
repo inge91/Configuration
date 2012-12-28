@@ -6,8 +6,6 @@ require("awful.rules")
 require("beautiful")
 -- Notification library
 require("naughty")
--- dynamic tagging
-require("eminent")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -54,7 +52,6 @@ modkey = "Mod4"
 layouts =
 {
     awful.layout.suit.tile,
-    awful.layout.suit.tile.bottom,
     awful.layout.suit.floating
 }
 -- }}}
@@ -376,9 +373,9 @@ end
 
 run_once("xfce4-power-manager")
 run_once("xfce4-volumed")
-run_once("nm-applet")
-awful.util.spawn_with_shell("xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &")
---awful.util.spawn_with_shell("pgrep -f -u $USER -x " .. "redshift" .. " || (" .. "redshift -l 52.3389926:4.9591888 -m vidmode &" .. ")")
+run_once("wicd-gtk")
 
+awful.util.spawn_with_shell("xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &")
 awful.util.spawn_with_shell("synclient HorizTwoFingerScroll=1")
 awful.util.spawn_with_shell("xset r rate 250 25")
+awful.util.spawn_with_shell("xrdb ~/.Xresources")
