@@ -6,7 +6,7 @@ Config { font = "xft:Dejavu Sans Mono-9:book"
        , commands = [ Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 60
                     , Run Memory ["-t","Mem: <usedratio>%"] 60
                     , Run Swap [] 60
-                    , Run Date "%a %b %_d %l:%M" "date" 60
+                    , Run Date "%a %b %_d %H:%M" "date" 60
                     , Run StdinReader
                     ]
        , sepChar = "%"
