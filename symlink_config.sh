@@ -15,3 +15,10 @@ if [ ! -d "~/.config/" ]; then
 fi
 
 ln -s $(pwd)/awesome ~/.config/
+
+if [ ! -d "~/.xmonad/" ]; then
+    mkdir -p ~/.xmonad/
+fi
+
+ln -s $(pwd)/xmonad.hs ~/.xmonad/
+ln -s $(pwd)/.xmobarrc ~
