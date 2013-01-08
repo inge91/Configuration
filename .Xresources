@@ -23,34 +23,44 @@ URxvt.font:xft:Dejavu Sans Mono-9
 xterm*termName: xterm-256color
 xterm*faceName: dejavu sans mono:pixelsize=12
 
-! terminal colours
-*foreground:#a0a0a0
-*background:#1b1d1e
+!
+! invisibone by baskerville
+!
+*background: #232323
+*foreground: #A0A0A0
 
-!molokai inspired colors
+*colorBD:    #CFCFCF
+*colorUL:    #A0A0A0
+*colorIT:    #686868
 
-!ObliviousGmnColors
-!black
-   *color0: #2E1F1F
-   *color8: #422D2D
-!red
-   *color1: #AA0E50
-   *color9: #BE0E50
-!green
-   *color2: #1DCC9F
-   *color10: #1FD9A9
-!yellow
-   *color3: #27C282
-   *color11: #2CDB93
-!blue
-   *color4: #7182A8
-   *color12: #8194BF
-!magenta
-   *color5: #A673A6
-   *color13: #7F5AA1
-!cyan
-   *color6: #6DA3A1
-   *color14: #669997
-!white
-   *color7: #B7BBBD
-   *color15: #D9D9D9
+!BLK
+*color0:     #303030
+*color8:     #686868
+
+!RED
+*color9:     #FFA7DA
+*color1:     #D370A3
+
+!GRN
+*color10:    #A3D572
+URxvt*color2:     #6D9E3F
+
+!BLU
+*color12:    #98CBFE
+*color4:     #6095C5
+
+!YEL
+*color11:    #EFBD8B
+*color3:     #B58858
+
+!CYN
+*color14:    #75DAA9
+*color6:     #3BA275
+
+!MAG
+*color13:    #E5B0FF
+*color5:     #AC7BDE
+
+!WHT
+*color7:     #CFCFCF
+*color15:    #FFFFFF
