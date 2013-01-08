@@ -1,3 +1,13 @@
+! Xft font settings
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.dpi: 96
+Xft.rgba: rgb
+
+! urxvt settings
 URxvt*termName:rxvt-256color
 URxvt*loginShell:true
 URxvt.scrollBar: false
@@ -7,48 +17,40 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
+URxvt.font:xft:Dejavu Sans Mono-9
 
-URxvt.font:xft:Terminus-11
+! xterm settings
+xterm*termName: xterm-256color
+xterm*faceName: dejavu sans mono:pixelsize=12
 
-Xft.autohint: 0
-Xft.lcdfilter: lcddefault
-Xft.hintstyle: hintfull
-Xft.hinting: 1
-Xft.antialias: 1
-Xft.dpi: 96
-Xft.rgba: rgb
+! terminal colours
+*foreground:#a0a0a0
+*background:#1b1d1e
 
-*foreground: #D7D0C7
-*background: #151515
+!molokai inspired colors
 
+!ObliviousGmnColors
 !black
-! *color0:     #AF875F
-! *color8:     #AF875F
-*color0:     #101010
-*color8:     #404040
+   *color0: #2E1F1F
+   *color8: #422D2D
 !red
-*color1:     #E84F4F
-*color9:     #D23D3D
+   *color1: #AA0E50
+   *color9: #BE0E50
 !green
-*color2:     #B8D68C
-*color10:    #A0CF5D
+   *color2: #1DCC9F
+   *color10: #1FD9A9
 !yellow
-*color3:     #E1AA5D
-*color11:    #F39D21
+   *color3: #27C282
+   *color11: #2CDB93
 !blue
-*color4:     #7DC1CF
-*color12:    #4E9FB1
+   *color4: #7182A8
+   *color12: #8194BF
 !magenta
-*color5:     #9B64FB
-*color13:    #8542FF
+   *color5: #A673A6
+   *color13: #7F5AA1
 !cyan
-*color6:     #6D878D
-*color14:    #42717B
+   *color6: #6DA3A1
+   *color14: #669997
 !white
-*color7:     #dddddd
-*color15:    #dddddd
-
-URxvt*borderColor:        #151515
-URxvt*colorBD:            #ffffff
-URxvt*cursorColor:        #ff8939
-URxvt*cursorColor2:       #151515
+   *color7: #B7BBBD
+   *color15: #D9D9D9
