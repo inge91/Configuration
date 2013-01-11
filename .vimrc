@@ -120,7 +120,7 @@ if has('gui_running')
 endif
 
 " set gvim font
-set gfn=Dejavu\ Sans\ Mono\ 9
+set gfn=Terminus\ 11
 
 
 
