@@ -1,6 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Basic stuff
 
-
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -89,10 +88,8 @@ Bundle 'majutsushi/tagbar'
 Bundle 'sjl/gundo.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'SirVer/ultisnips'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
 Bundle 'mileszs/ack.vim'
-Bundle 'w0ng/vim-hybrid'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'xaviershay/tslime.vim'
 
@@ -113,7 +110,7 @@ filetype plugin indent on
 
 " colorscheme
 "
-colorscheme Tomorrow-Night
+colorscheme xoria256
 
 if has('gui_running')
     colorscheme Tomorrow-Night
