@@ -14,7 +14,7 @@ xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
 synclient HorizTwoFingerScroll=1 &
 
 # background
-feh --bg-scale ~/Pictures/leaf.svg &
+feh --bg-scale ../wallpaper.jpeg &
 
 # progams to autostart
 urxvtd &
