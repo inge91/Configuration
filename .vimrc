@@ -117,7 +117,7 @@ if has('gui_running')
 endif
 
 " set gvim font
-set gfn=Terminus\ 11
+set gfn=Dina\ 11
 
 
 
@@ -134,9 +134,6 @@ noremap <F3> :TagbarToggle<CR>
 " gundo settings
 nnoremap <F4> :GundoToggle<CR>
 
-" powerline settings
-let g:Powerline_symbols='compatible'
-set laststatus=2 " Always show the statusline
 
 " clang_complete
 let g:clang_use_library = 1

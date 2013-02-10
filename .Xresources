@@ -1,7 +1,7 @@
 ! Xft font settings
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
-Xft.hintstyle: hintfull
+Xft.hintstyle: hintslight
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.dpi: 96
@@ -17,11 +17,11 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Terminus-11
+URxvt.font:xft:Dina-11
 
 ! xterm settings
 xterm*termName: xterm-256color
-xterm*faceName: Terminus:size=11
+xterm*faceName: Dina:size=11
 
 ! [ terminal colors ]
 !   black / dark gray
