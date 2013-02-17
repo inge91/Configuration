@@ -17,39 +17,46 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Dina-11
+URxvt.font:xft:Terminus-11
 
 ! xterm settings
 xterm*termName: xterm-256color
-xterm*faceName: Dina:size=11
+xterm*faceName: Terminus:size=11
 
-! [ terminal colors ]
-!   black / dark gray
-*color0: #4D4D4D
-*color8: #9E9E9E
-!   red
-*color1: #725631
-*color9: #AC885B
-!   green
-*color2: #5F6C3F
-*color10: #8F9D6A
-!   yellow
-*color3: #757575
-*color11: #B8B8B8
-!   blue
-*color4: #39598E
-*color12: #7587A6
-!   magenta
-*color5: #713B71
-*color13: #9B859D
-!   cyan
-*color6: #404040
-*color14: #404040
-!   light gray / white
-*color7: #B8B8B8
-*color15: #757575
+!Black
+*.color0: #000000
+*.color8: #5D5D5D
 
-! [ urxvt ]
-*background: #141414
-*foreground: #F8F8F8
-*cursorColor: #404040
+!Red
+*.color1: #C75646
+*.color9: #E09690
+
+!Green
+*.color2: #8EB33B
+*.color10: #CDEE69
+
+!Yellow
+*.color3: #D0B03C
+*.color11: #FFE377
+
+!Blue
+*.color4:  #72B3CC
+*.color12: #9CD9F0
+
+!Magenta
+*.color5:  #C8A0D1
+*.color13: #FBB1F9
+
+!Cyan
+*.color6:  #218693
+*.color14: #77DFD8
+
+!White
+*.color7: #B0B0B0
+*.color15: #F7F7F7
+
+*.background: #1B1B1B
+!*.colorBD: #FFFFFF
+*.cursorColor: #218693
+!*.cursorColor2: #FFFFFF
+*.foreground: #F8F8F8
