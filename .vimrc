@@ -22,10 +22,10 @@ endif
 syntax on
 
 " set the tabwidth and spaces instead of tabs
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4 " makes the spaces feel like real tabs
+""set expandtab
+""set tabstop=4
+""set shiftwidth=4
+""set softtabstop=4 " makes the spaces feel like real tabs
 
 " set no search highlighting
 set nohlsearch
@@ -82,6 +82,7 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-sleuth'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'majutsushi/tagbar'
