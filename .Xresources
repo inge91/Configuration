@@ -17,11 +17,11 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Terminus-11
+URxvt.font:xft:Dina-11
 
 ! xterm settings
 xterm*termName: xterm-256color
-xterm*faceName: Terminus:size=11
+xterm*faceName: Dejavu Sans Mono:size=9
 
 !Black
 *.color0: #000000
