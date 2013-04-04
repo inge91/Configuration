@@ -10,7 +10,7 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(auctex evil magit color-theme-sanityinc-tomorrow scala-mode2 prolog)
+(defvar my-packages '(auctex evil magit color-theme-sanityinc-tomorrow scala-mode2 prolog tree-mode yasnippet)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
