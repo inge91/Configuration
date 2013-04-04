@@ -3,6 +3,8 @@
 ln -s $(pwd)/.vim ~
 ln -s $(pwd)/.vimrc ~
 
+ln -s $(pwd)/.emacs.d ~
+
 ln -s $(pwd)/.Xresources ~
 
 ln -s $(pwd)/.tmux.conf ~
