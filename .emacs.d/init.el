@@ -10,7 +10,7 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(auctex evil magit color-theme-sanityinc-tomorrow scala-mode2 prolog tree-mode yasnippet)
+(defvar my-packages '(auctex evil magit ir-black-theme scala-mode2 prolog tree-mode yasnippet scala-mode2)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -25,7 +25,7 @@
 
 ;; gotta look sexy
 (set-frame-font "Dejavu Sans Mono-9")
-(load-theme 'sanityinc-tomorrow-night t)
+(load-theme 'ir-black t)
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
@@ -41,6 +41,11 @@
 (column-number-mode t)
 (set-fringe-style -1)
 (tooltip-mode -1)
+
+;; linebreak
+(set-fill-column 80)
+(auto-fill-mode t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -57,5 +62,12 @@
 
 (require 'dirtree)
 (require 'yasnippet)
+(require 'auto-complete-config)
 
+(ac-config-default)
 (yas/global-mode 1)
+
+(add-to-list 'load-path "~/.emacs.d/local/ensime/elisp/")
+(require 'ensime)
+
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
