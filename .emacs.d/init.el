@@ -26,7 +26,7 @@
 (evil-mode 1)
 
 ;; gotta look sexy
-(set-frame-font "Dejavu Sans Mono-9")
+(set-frame-font "Monaco-9")
 (load-theme 'sanityinc-tomorrow-night t)
 
 (setq make-backup-files nil)
@@ -54,6 +54,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes (quote ("06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" default)))
+ '(org-hide-emphasis-markers t)
  '(preview-gs-options (quote ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
