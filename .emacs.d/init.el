@@ -12,7 +12,8 @@
 ;; Add in your own as you wish:
 (defvar my-packages '(auctex evil magit ir-black-theme scala-mode2 prolog
                              tree-mode yasnippet scala-mode2 wrap-region cdlatex
-                             color-theme-sanityinc-tomorrow)
+                             color-theme-sanityinc-tomorrow auto-complete
+                             powerline)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
