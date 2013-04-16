@@ -93,6 +93,8 @@ Bundle 'godlygeek/tabular'
 Bundle 'mileszs/ack.vim'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'xaviershay/tslime.vim'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'Shougo/neocomplcache'
 
 " vim-scripts repos
 " Bundle 'FuzzyFinder'
@@ -111,10 +113,10 @@ filetype plugin indent on
 
 " colorscheme
 "
-colorscheme xoria256
+colorscheme Tomorrow-Night
 
 if has('gui_running')
-    colorscheme xoria256
+    colorscheme Tomorrow-Night
 endif
 
 " set gvim font
@@ -144,3 +146,6 @@ let g:clang_user_options = '|| exit 0'
 let g:clang_snippets = 1
 let g:clang_snippets_engine = 'ultisnips'
 let g:clang_close_preview = 1
+
+" neocomplcache
+let g:neocomplcache_enable_at_startup = 1
