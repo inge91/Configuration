@@ -74,6 +74,8 @@
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
 (ac-config-default)
+(ac-set-trigger-key "TAB")
+
 (yas/global-mode t)
 (ido-mode t)
 (autopair-global-mode)
