@@ -113,7 +113,7 @@ filetype plugin indent on
 
 " colorscheme
 "
-colorscheme Tomorrow-Night
+colorscheme default
 
 if has('gui_running')
     colorscheme Tomorrow-Night

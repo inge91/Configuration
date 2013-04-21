@@ -17,14 +17,11 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Dina-11
+URxvt.font:xft:Dejavu Sans Mono-9
 
 ! xterm settings
 xterm*termName: xterm-256color
 xterm*faceName: Dejavu Sans Mono:size=9
-
-! Hybrid Terminal Colours
-! vim: ft=xdefaults
 
 ! Tomorrow-Night Palette
 #define t_background #1D1F21
@@ -40,7 +37,10 @@ xterm*faceName: Dejavu Sans Mono:size=9
 #define t_blue #81A2BE
 #define t_purple #B294BB
 
-*background: t_background
+!! transparent background for urxvt
+xterm*background: t_background
+URxvt.background: [70]#000000
+
 *foreground: t_foreground
 ! black
 *color0: t_current_line

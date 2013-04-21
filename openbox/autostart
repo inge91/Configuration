@@ -5,9 +5,22 @@ xrdb ~/.Xresources
 # keyboard repeat rate
 xset r rate 250 25 &
 
+# powersavings or something
+xset +dpms
+xset dpms 0 0 300
+
+# horizontal scrolling
+synclient HorizTwoFingerScroll=1 &
+
 # bind escape to capslock
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
 
 # background
-feh --bg-scale ~/.dwm/wallpaper.jpeg &
+feh --bg-scale ~/.dwm/../wallpaper.jpeg &
 
+# compositing
+compton -cCGb
+
+# some applications
+tint2 &
+volumeicon &

@@ -21,4 +21,5 @@ urxvtd &
 nm-applet &
 volumeicon &
 xfce4-power-manager &
-
+dwm_bar.sh &
+compton -cCGb

@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Dyne</name>
+    <name>Surreal</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -331,16 +331,16 @@
         <command>kfmclient openProfile filemanagement</command>
       </action>
     </keybind>
-    <keybind key="A-t">
+    <keybind key="W-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>uxterm</name>
+          <name>urxvt</name>
         </startupnotify>
-        <command>uxterm</command>
+        <command>urxvt</command>
       </action>
     </keybind>
-    <keybind key="A-p">
+    <keybind key="W-p">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -355,7 +355,6 @@
         <command>gnome-screenshot</command>
       </action>
     </keybind>
-
     <!-- window snap behaviour -->
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
@@ -363,7 +362,9 @@
       <action name="MoveResizeTo">
         <width>50%</width>
       </action>
-      <action name="MoveToEdge"><direction>west</direction></action>
+      <action name="MoveToEdge">
+        <direction>west</direction>
+      </action>
     </keybind>
     <keybind key="W-Right">
       <action name="UnmaximizeFull"/>
@@ -371,7 +372,9 @@
       <action name="MoveResizeTo">
         <width>50%</width>
       </action>
-      <action name="MoveToEdge"><direction>east</direction></action>
+      <action name="MoveToEdge">
+        <direction>east</direction>
+      </action>
     </keybind>
     <keybind key="W-Down">
       <action name="Unmaximize"/>
