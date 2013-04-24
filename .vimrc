@@ -113,14 +113,14 @@ filetype plugin indent on
 
 " colorscheme
 "
-colorscheme default
+colorscheme euphrasia
 
 if has('gui_running')
-    colorscheme Tomorrow-Night
+    colorscheme euphrasia
 endif
 
 " set gvim font
-set gfn=Dejavu\ Sans\ Mono\ 9
+set gfn=Monaco\ 9
 
 
 
