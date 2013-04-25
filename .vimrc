@@ -113,14 +113,14 @@ filetype plugin indent on
 
 " colorscheme
 "
-colorscheme euphrasia
+colorscheme railscasts
 
 if has('gui_running')
-    colorscheme euphrasia
+    colorscheme railscasts
 endif
 
 " set gvim font
-set gfn=Monaco\ 9
+set gfn=Dejavu\ Sans\ Mono\ 9
 
 
 

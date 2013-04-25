@@ -17,11 +17,11 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Monaco-9
+URxvt.font:xft:Dejavu Sans Mono-9
 
 ! xterm settings
 xterm*termName: xterm-256color
-xterm*faceName: Monaco:size=9
+xterm*faceName: Tamsyn:size=10
 
 ! Tomorrow-Night Palette
 #define t_background #1D1F21
@@ -44,50 +44,38 @@ xterm*faceName: Monaco:size=9
 ! URxvt*foreground: #E6E6E6
 ! URxvt*cursorColor: #1AAA13
 
-! euphrasia fg/bg
-*background: #090C19
-*foreground: #E6E6E6
-*cursorColor: #1AAA13
-
-!*background: #D0CECB
-!*foreground: #090C19
+! Colors.
+*background: #0D131A
+*foreground: #8A9499
 
 ! black
-*color0: #222946
-! dark grey
-*color8: #8C8B89
+*color0: #0D131A
+*color8: #44484C
 
 ! red
-*color1: #BE1919
-! bright red
-*color9: #DC2F32
+*color1: #802635
+*color9: #B3354C
 
 ! green
-*color2: #1AAA13
-! bright green
-*color10: #5DCE33
+*color2: #608040
+*color10: #4BA65A
 
 ! yellow
-*color3: #FFAA3E
-! bright yellow
-*color11: #FADD2D
+*color3: #877C43
+*color11: #BF9F5F
 
 ! blue
-*color4: #3753CC
-! bright blue
-*color12: #507CFF
+*color4: #1C678C
+*color12: #3995BF
 
 ! magenta
-*color5: #BE007F
-! bright magenta
-*color13: #E65CD0
+*color5: #684D80
+*color13: #A64286
 
 ! cyan
-*color6: #14BDCC
-! bright cyan
-*color14: #48F3F3
+*color6: #337373
+*color14: #6AAAB3
 
-! light grey
-*color7: #AEAEAE
 ! white
-*color15: #DBDDE4
+*color7: #738080
+*color15: #B3B3B3
