@@ -47,8 +47,12 @@
 (tooltip-mode -1)
 
 ;; linebreak
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
 (set-fill-column 80)
-(setq auto-fill-mode t)
+
+;; scroll by lane
+(setq scroll-step            1
+      scroll-conservatively  10000)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
