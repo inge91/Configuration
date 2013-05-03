@@ -17,11 +17,11 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Dejavu Sans Mono-9
+URxvt.font:xft:Cousine-9
 
 ! xterm settings
 xterm*termName: xterm-256color
-xterm*faceName: Tamsyn:size=10
+xterm*faceName: Cousine:size=12pt
 
 ! Tomorrow-Night Palette
 #define t_background #1D1F21

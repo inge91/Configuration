@@ -13,7 +13,7 @@
 (defvar my-packages '(auctex evil magit ir-black-theme scala-mode2 prolog
                              tree-mode yasnippet scala-mode2 wrap-region 
                              color-theme-sanityinc-tomorrow auto-complete
-                             powerline autopair dtrt-indent)
+                             autopair dtrt-indent)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -28,8 +28,8 @@
 (evil-mode 1)
 
 ;; gotta look sexy
-(set-frame-font "Dejavu Sans Mono-9")
-(load-theme 'railscasts t)
+(set-frame-font "Cousine-9")
+(load-theme 'noctilux t)
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
@@ -71,7 +71,6 @@
 (require 'dirtree)
 (require 'yasnippet)
 (require 'auto-complete-config)
-(require 'powerline)
 (require 'ido)
 (require 'autopair)
 (require 'dtrt-indent)
@@ -88,8 +87,6 @@
 
 (add-to-list 'load-path "~/.emacs.d/local/ensime/elisp/")
 (require 'ensime)
-
-(powerline-default-theme)
 
 (setq ido-enable-flex-matching t)
 (setq org-hide-emphasis-markers t)
