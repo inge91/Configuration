@@ -113,14 +113,14 @@ filetype plugin indent on
 
 " colorscheme
 "
-colorscheme railscasts
+colorscheme Tomorrow-Night
 
 if has('gui_running')
-    colorscheme railscasts
+    colorscheme Tomorrow-Night
 endif
 
 " set gvim font
-set gfn=Dejavu\ Sans\ Mono\ 9
+set gfn=Cousine\ 9
 
 
 

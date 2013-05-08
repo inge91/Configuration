@@ -10,10 +10,10 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(auctex evil magit ir-black-theme scala-mode2 prolog
+(defvar my-packages '(auctex evil magit  scala-mode2 prolog textmate
                              tree-mode yasnippet scala-mode2 wrap-region 
                              color-theme-sanityinc-tomorrow auto-complete
-                             autopair dtrt-indent)
+                             autopair dtrt-indent smex noctilux-theme)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -28,7 +28,9 @@
 (evil-mode 1)
 
 ;; gotta look sexy
+(setq evil-default-cursor t)
 (set-frame-font "Cousine-9")
+(require 'noctilux-definitions)
 (load-theme 'noctilux t)
 
 (setq make-backup-files nil)
@@ -79,7 +81,7 @@
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
 (ac-config-default)
-(ac-set-trigger-key "TAB")
+(global-set-key (kbd "C-x C-o") 'auto-complete)
 
 (yas/global-mode t)
 (ido-mode t)
@@ -98,3 +100,22 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
+(require 'auto-complete-clang-async)
+
+;; clang complete async setup
+(defun ac-cc-mode-setup ()
+  (setq ac-clang-complete-executable "~/.emacs.d/local/clang-complete")
+  (setq ac-sources '(ac-source-clang-async))
+  (ac-clang-launch-completion-process)
+)
+
+(defun my-ac-config ()
+  (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
+  (add-hook 'c++-mode-common-hook 'ac-cc-mode-setup)
+  (add-hook 'auto-complete-mode-hook 'ac-common-setup)
+  (global-auto-complete-mode t))
+
+(my-ac-config)
+
+(require 'textmate)
+(textmate-mode)
