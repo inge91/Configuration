@@ -13,7 +13,7 @@
 (defvar my-packages '(auctex evil magit  scala-mode2 prolog textmate
                              tree-mode yasnippet scala-mode2 wrap-region 
                              color-theme-sanityinc-tomorrow auto-complete
-                             autopair dtrt-indent smex noctilux-theme)
+                             autopair dtrt-indent smex haskell-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -29,9 +29,8 @@
 
 ;; gotta look sexy
 (setq evil-default-cursor t)
-(set-frame-font "Cousine-9")
-(require 'noctilux-definitions)
-(load-theme 'noctilux t)
+(set-frame-font "Dejavu Sans Mono-9")
+(load-theme 'sanityinc-tomorrow-night t)
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
@@ -119,3 +118,6 @@
 
 (require 'textmate)
 (textmate-mode)
+
+(add-hook 'Haskell-mode-hook (lambda () (setq evil-auto-indent nil)))
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
