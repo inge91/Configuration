@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Airborne</name>
+    <name>Zukitwo</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -247,22 +247,22 @@
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="A-S-1">
+    <keybind key="W-S-1">
       <action name="SendToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="A-S-2">
+    <keybind key="W-S-2">
       <action name="SendToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="A-S-3">
+    <keybind key="W-S-3">
       <action name="SendToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="A-S-4">
+    <keybind key="W-S-4">
       <action name="SendToDesktop">
         <to>4</to>
       </action>

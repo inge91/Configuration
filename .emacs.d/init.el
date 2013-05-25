@@ -30,7 +30,7 @@
 ;; gotta look sexy
 (setq evil-default-cursor t)
 (set-frame-font "Dejavu Sans Mono-9")
-(load-theme 'sanityinc-tomorrow-night t)
+(load-theme 'sanityinc-tomorrow-bright t)
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
@@ -118,6 +118,7 @@
 
 (require 'textmate)
 (textmate-mode)
+(add-hook 'org-mode-hook (lambda () (textmate-mode 0)))
 
 (add-hook 'Haskell-mode-hook (lambda () (setq evil-auto-indent nil)))
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
