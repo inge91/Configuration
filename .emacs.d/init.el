@@ -30,7 +30,7 @@
 ;; gotta look sexy
 (setq evil-default-cursor t)
 (set-frame-font "Dejavu Sans Mono-9")
-(load-theme 'sanityinc-tomorrow-bright t)
+(load-theme 'sanityinc-tomorrow-night t)
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
@@ -77,8 +77,6 @@
 (require 'dtrt-indent)
 (require 'smex)
 
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-
 (ac-config-default)
 (global-set-key (kbd "C-x C-o") 'auto-complete)
 
@@ -86,9 +84,6 @@
 (ido-mode t)
 (autopair-global-mode)
 (dtrt-indent-mode t)
-
-(add-to-list 'load-path "~/.emacs.d/local/ensime/elisp/")
-(require 'ensime)
 
 (setq ido-enable-flex-matching t)
 (setq org-hide-emphasis-markers t)
