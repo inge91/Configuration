@@ -17,46 +17,52 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Cousine-9
+URxvt.font:xft:Meslo LG M DZ-9
 
 ! xterm settings
 xterm*termName: xterm-256color
-xterm*faceName: Cousine:size=12pt
+xterm*faceName: Meslo LG M DZ:size=10pt
 
-! Colors.
-xterm*background: #0D131A
-xterm*foreground: #8A9499
-URxvt*background: #0D131A
-URxvt*foreground: #8A9499
+urxvt*cursorColor:      #fd971f
 
-! black
-*color0: #0D131A
-*color8: #44484C
+! terminal colours
+*foreground:#a0a0a0
+*background:#1b1d1e
+!*background:#2c2c2c
+!*background:#222222
 
-! red
-*color1: #802635
-*color9: #B3354C
+!black
+*color0:    #1b1d1e
+*color8:    #505354
+!red
+*color1:    #f92672
+*color9:    #ff5995
+!green
+*color2:    #82b414
+*color10:   #b6e354
+!yellow
+*color3:    #fd971f
+*color11:   #feed6c
+!blue
+*color4:    #56c2d6
+*color12:   #8cedff
+!magenta
+*color5:    #8c54fe
+*color13:   #9e6ffe
+!cyan
+*color6:    #465457
+*color14:   #899ca1
+!white
+*color7:    #ccccc6
+*color15:   #f8f8f2
 
-! green
-*color2: #608040
-*color10: #4BA65A
-
-! yellow
-*color3: #877C43
-*color11: #BF9F5F
-
-! blue
-*color4: #1C678C
-*color12: #3995BF
-
-! magenta
-*color5: #684D80
-*color13: #A64286
-
-! cyan
-*color6: #337373
-*color14: #6AAAB3
-
-! white
-*color7: #738080
-*color15: #B3B3B3
+! alsamixer scheme
+alsamixer*color1:   #ff2759
+alsamixer*color9:   #ff2759
+alsamixer*color2:   #52aebf
+alsamixer*color10:  #52aebf
+alsamixer*color7:   #ffffff
+alsamixer*color15:  #ffffff
+alsamixer*color11:  #777777
+alsamixer*color4:   #1b1d1e
+alsamixer*scrollBar:  false

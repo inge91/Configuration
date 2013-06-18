@@ -24,3 +24,4 @@ compton -cCGb
 # some applications
 tint2 &
 volumeicon &
+xfce4-power-manager &

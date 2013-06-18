@@ -10,10 +10,10 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(auctex evil magit  scala-mode2 prolog textmate
-                             tree-mode yasnippet scala-mode2 wrap-region 
-                             color-theme-sanityinc-tomorrow auto-complete
-                             autopair dtrt-indent smex haskell-mode)
+(defvar my-packages '(auctex evil magit textmate yasnippet
+                             color-theme-sanityinc-tomorrow
+                             auto-complete autopair dtrt-indent smex
+                             haskell-mode cyberpunk-theme)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -29,8 +29,8 @@
 
 ;; gotta look sexy
 (setq evil-default-cursor t)
-(set-frame-font "Dejavu Sans Mono-9")
-(load-theme 'sanityinc-tomorrow-night t)
+(set-frame-font "Meslo LG M DZ-9")
+(load-theme 'sanityinc-tomorrow-eighties t)
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
@@ -69,7 +69,6 @@
  ;; If there is more than one, they won't work right.
  )
 
-(require 'dirtree)
 (require 'yasnippet)
 (require 'auto-complete-config)
 (require 'ido)

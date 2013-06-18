@@ -113,14 +113,13 @@ filetype plugin indent on
 
 " colorscheme
 "
-colorscheme Tomorrow-Night-Bright
-
+colorscheme desert
 if has('gui_running')
-    colorscheme Tomorrow-Night-Bright
+    colorscheme Tomorrow-Night-Eighties
 endif
 
 " set gvim font
-set gfn=Dash\ 9
+set gfn=Meslo\ LG\ M\ DZ\ 9
 
 
 
