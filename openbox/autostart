@@ -16,7 +16,7 @@ synclient HorizTwoFingerScroll=1 &
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
 
 # background
-feh --bg-scale ~/.dwm/../wallpaper.jpeg &
+feh --bg-scale ~/.dwm/../grey.jpg &
 
 # compositing
 compton -cCGb

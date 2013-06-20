@@ -22,12 +22,15 @@ URxvt.font:xft:Meslo LG M DZ-9
 ! xterm settings
 xterm*termName: xterm-256color
 xterm*faceName: Meslo LG M DZ:size=10pt
+xterm*scrollBar: false
 
 urxvt*cursorColor:      #fd971f
 
 ! terminal colours
-*foreground:#a0a0a0
-*background:#1b1d1e
+URxvt*foreground:#a0a0a0
+URxvt*background:#1b1d1e
+xterm*foreground:#a0a0a0
+xterm*background:#1b1d1e
 !*background:#2c2c2c
 !*background:#222222
 
