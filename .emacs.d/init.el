@@ -13,7 +13,7 @@
 (defvar my-packages '(auctex evil magit textmate yasnippet
                              color-theme-sanityinc-tomorrow
                              auto-complete autopair dtrt-indent smex
-                             haskell-mode cyberpunk-theme)
+                             haskell-mode jedi)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -29,7 +29,7 @@
 
 ;; gotta look sexy
 (setq evil-default-cursor t)
-(set-frame-font "Meslo LG M DZ-9")
+(set-frame-font "Meslo LG M DZ 9")
 (load-theme 'sanityinc-tomorrow-eighties t)
 
 (setq make-backup-files nil)
@@ -54,6 +54,9 @@
 ;; scroll by lane
 (setq scroll-step            1
       scroll-conservatively  10000)
+
+;; auto-indent with enter
+(define-key global-map (kbd "RET") 'newline-and-indent)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -116,3 +119,7 @@
 
 (add-hook 'Haskell-mode-hook (lambda () (setq evil-auto-indent nil)))
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:setup-keys t)
+(setq jedi:complete-on-dot t)
