@@ -24,10 +24,6 @@ syntax on
 
 " ===== Appearance ===== "
 colorscheme Tomorrow-Night-Eighties
-if has('gui_running')
-    colorscheme Tomorrow-Night-Eighties
-endif
-
 set gfn=Dina\ 11
 
 " ===== NeoBundle plugin manager ===== "
