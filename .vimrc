@@ -24,7 +24,7 @@ syntax on
 
 " ===== Appearance ===== "
 colorscheme Tomorrow-Night-Eighties
-set gfn=Dina\ 11
+set gfn=Dejavu\ Sans\ Mono\ 9
 
 " ===== NeoBundle plugin manager ===== "
 if has('vim_starting')
@@ -71,8 +71,6 @@ noremap <F3> :TagbarToggle<CR>
 nnoremap <F4> :GundoToggle<CR>
 
 " clang_complete
-let g:clang_library_path = "/usr/lib64/llvm"
-
 let g:clang_snippets = 1
 let g:clang_snippets_engine = 'ultisnips'
 let g:clang_close_preview = 1

@@ -1,11 +1,11 @@
 ! Xft font settings
-Xft.autohint: 0
-Xft.lcdfilter: lcddefault
-Xft.hintstyle: hintmedium
-Xft.hinting: 1
-Xft.antialias: 1
-Xft.dpi: 96
-Xft.rgba: rgb
+! Xft.autohint: 0
+! Xft.lcdfilter: lcddefault
+! Xft.hintstyle: hintmedium
+! Xft.hinting: 1
+! Xft.antialias: 1
+! Xft.dpi: 96
+! Xft.rgba: rgb
 
 ! urxvt settings
 URxvt*termName:rxvt-256color
@@ -17,11 +17,11 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Meslo LG M DZ-9
+URxvt.font:xft:Dejavu Sans Mono-9
 
 ! xterm settings
 xterm*termName: xterm-256color
-xterm*faceName: Meslo LG M DZ:size=10pt
+xterm*faceName: Dejavu Sans Mono:size=9pt
 xterm*scrollBar: false
 
 urxvt*cursorColor:      #fd971f
@@ -58,14 +58,3 @@ xterm*background:#1b1d1e
 !white
 *color7:    #ccccc6
 *color15:   #f8f8f2
-
-! alsamixer scheme
-alsamixer*color1:   #ff2759
-alsamixer*color9:   #ff2759
-alsamixer*color2:   #52aebf
-alsamixer*color10:  #52aebf
-alsamixer*color7:   #ffffff
-alsamixer*color15:  #ffffff
-alsamixer*color11:  #777777
-alsamixer*color4:   #1b1d1e
-alsamixer*scrollBar:  false
