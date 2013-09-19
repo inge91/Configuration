@@ -21,7 +21,7 @@ URxvt.font:xft:Dejavu Sans Mono-9
 
 ! xterm settings
 xterm*termName: xterm-256color
-xterm*faceName: Dejavu Sans Mono:size=9pt
+xterm*faceName: PragmataPro:size=10
 xterm*scrollBar: false
 
 urxvt*cursorColor:      #fd971f

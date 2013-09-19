@@ -13,7 +13,7 @@
 (defvar my-packages '(auctex evil magit textmate yasnippet
                              color-theme-sanityinc-tomorrow
                              auto-complete autopair dtrt-indent smex
-                             haskell-mode jedi)
+                             haskell-mode jedi clojure-mode nrepl paredit)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -29,8 +29,8 @@
 
 ;; gotta look sexy
 (setq evil-default-cursor t)
-(set-frame-font "Meslo LG M DZ 9")
-(load-theme 'sanityinc-tomorrow-eighties t)
+(set-frame-font "PragmataPro 10")
+(load-theme 'zenburn t)
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
@@ -80,7 +80,6 @@
 (require 'smex)
 
 (ac-config-default)
-(global-set-key (kbd "C-x C-o") 'auto-complete)
 
 (yas/global-mode t)
 (ido-mode t)

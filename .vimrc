@@ -23,8 +23,8 @@ set cino=(0
 syntax on
 
 " ===== Appearance ===== "
-colorscheme Tomorrow-Night-Eighties
-set gfn=Dejavu\ Sans\ Mono\ 9
+colorscheme zenburn
+set gfn=PragmataPro\ 10
 
 " ===== NeoBundle plugin manager ===== "
 if has('vim_starting')
