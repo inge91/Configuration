@@ -17,44 +17,55 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Dejavu Sans Mono-9
+URxvt.font:xft:Tamsyn-12
 
 ! xterm settings
 xterm*termName: xterm-256color
-xterm*faceName: PragmataPro:size=10
+xterm*faceName: Dina:size=11
 xterm*scrollBar: false
 
 urxvt*cursorColor:      #fd971f
 
 ! terminal colours
-URxvt*foreground:#a0a0a0
-URxvt*background:#1b1d1e
-xterm*foreground:#a0a0a0
-xterm*background:#1b1d1e
-!*background:#2c2c2c
-!*background:#222222
-
-!black
-*color0:    #1b1d1e
-*color8:    #505354
-!red
-*color1:    #f92672
-*color9:    #ff5995
-!green
-*color2:    #82b414
-*color10:   #b6e354
-!yellow
-*color3:    #fd971f
-*color11:   #feed6c
-!blue
-*color4:    #56c2d6
-*color12:   #8cedff
-!magenta
-*color5:    #8c54fe
-*color13:   #9e6ffe
-!cyan
-*color6:    #465457
-*color14:   #899ca1
-!white
-*color7:    #ccccc6
-*color15:   #f8f8f2
+! Tomorrow-Night Palette
+#define t_background #1D1F21
+#define t_current_line #282A2E
+#define t_selection #373B41
+#define t_foreground #C5C8C6
+#define t_comment #707880
+#define t_red #CC6666
+#define t_orange #DE935F
+#define t_yellow #F0C674
+#define t_green #B5BD68
+#define t_aqua #8ABEB7
+#define t_blue #81A2BE
+#define t_purple #B294BB
+ 
+xterm*background: t_background
+xterm*foreground: t_foreground
+urxvt*background: t_background
+urxvt*foreground: t_foreground
+! black
+*color0: t_current_line
+*color8: t_selection
+! red
+*color1: #A54242
+*color9: t_red
+! green
+*color2: #8C9440
+*color10: t_green
+! yellow
+*color3: t_orange
+*color11: t_yellow
+! blue
+*color4: #5F819D
+*color12: t_blue
+! magenta
+*color5: #85678F
+*color13: t_purple
+! cyan
+*color6: #5E8D87
+*color14: t_aqua
+! white
+*color7: t_comment
+*color15: t_foreground

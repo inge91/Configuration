@@ -22,10 +22,6 @@ set cino=(0
 
 syntax on
 
-" ===== Appearance ===== "
-colorscheme zenburn
-set gfn=PragmataPro\ 10
-
 " ===== NeoBundle plugin manager ===== "
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -41,7 +37,6 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-sleuth'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'majutsushi/tagbar'
-NeoBundle 'sjl/gundo.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'godlygeek/tabular'
@@ -52,10 +47,17 @@ NeoBundle 'Rip-Rip/clang_complete'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'VimClojure'
 NeoBundle 'LaTeX-Box'
+NeoBundle 'w0ng/vim-hybrid'
 
 NeoBundleCheck
 
 filetype plugin indent on
+
+
+" ===== Appearance ===== "
+colorscheme hybrid
+set gfn=Tamsyn\ 12
+
 
 " ===== Plugin settings ===== "
 
