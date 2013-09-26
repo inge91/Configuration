@@ -12,13 +12,14 @@ xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
 
 # horizontal scrolling
 synclient HorizTwoFingerScroll=1 &
+synclient TapButton1=1 &
 
 # background
 feh --bg-scale ../wallpaper.jpeg &
 
 # progams to autostart
-urxvtd &
+#urxvtd &
 nm-applet &
-volumeicon &
+#volumeicon &
 xfce4-power-manager &
-dwm_bar.sh &
+#dwm_bar.sh &

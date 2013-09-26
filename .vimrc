@@ -56,7 +56,7 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 colorscheme hybrid
-set gfn=Tamsyn\ 12
+set gfn=Terminus\ 12
 
 
 " ===== Plugin settings ===== "

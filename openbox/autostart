@@ -11,6 +11,7 @@ xset dpms 0 0 300
 
 # horizontal scrolling
 synclient HorizTwoFingerScroll=1 &
+synclient TapButton1=1 &
 
 # bind escape to capslock
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
@@ -19,9 +20,9 @@ xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
 feh --bg-scale ~/.dwm/../grey.jpg &
 
 # compositing
-compton -cCGb
+compton --backend glx -cCGb
 
 # some applications
 tint2 &
-volumeicon &
+#volumeicon &
 xfce4-power-manager &

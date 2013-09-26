@@ -29,8 +29,10 @@
 
 ;; gotta look sexy
 (setq evil-default-cursor t)
-(set-frame-font "PragmataPro 10")
-(load-theme 'zenburn t)
+(set-frame-font "Terminus 12")
+(load-theme 'sanityinc-tomorrow-night t)
+(when (display-graphic-p)
+  (menu-bar-mode -1))
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
