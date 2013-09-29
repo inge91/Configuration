@@ -9,11 +9,14 @@ set linebreak
 set undodir=~/.vim/undodir
 set undofile
 
-" default indentation: 4 spaces
+" default indentation: 2 spaces
+" in existing files, indentation is set by the vim-sleuth plugin
 set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+
+" make the autocomplete match the longest substring, and display even if there's
+" only one match
+set completeopt=longest,menuone
 
 " align at the same level when there's unclosed parenthesis, as in:
 " foo(argument_1,
@@ -47,7 +50,10 @@ NeoBundle 'Rip-Rip/clang_complete'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'VimClojure'
 NeoBundle 'LaTeX-Box'
+
 NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'itchyny/landscape.vim'
 
 NeoBundleCheck
 
@@ -55,7 +61,7 @@ filetype plugin indent on
 
 
 " ===== Appearance ===== "
-colorscheme hybrid
+colorscheme ir_black
 set gfn=Terminus\ 12
 
 
@@ -63,6 +69,7 @@ set gfn=Terminus\ 12
 
 " bind the buftag plugin of CtrlP
 noremap <C-p> :CtrlP<CR>
+noremap <C-S-p> :CtrlPBuffer<CR>
 noremap <C-o> :CtrlPBufTag<CR>
 
 " nerdtree and taglist toggle
@@ -76,3 +83,9 @@ nnoremap <F4> :GundoToggle<CR>
 let g:clang_snippets = 1
 let g:clang_snippets_engine = 'ultisnips'
 let g:clang_close_preview = 1
+
+" lightline settings
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'landscape',
+      \ }
