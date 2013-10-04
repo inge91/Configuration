@@ -51,7 +51,7 @@ NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'VimClojure'
 NeoBundle 'LaTeX-Box'
 
-NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'itchyny/landscape.vim'
 
@@ -61,7 +61,8 @@ filetype plugin indent on
 
 
 " ===== Appearance ===== "
-colorscheme ir_black
+set background=dark
+colorscheme base16-chalk
 set gfn=Terminus\ 12
 
 
@@ -87,5 +88,5 @@ let g:clang_close_preview = 1
 " lightline settings
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'landscape',
+      \ 'colorscheme': 'jellybeans',
       \ }
