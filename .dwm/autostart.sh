@@ -15,11 +15,11 @@ synclient HorizTwoFingerScroll=1 &
 synclient TapButton1=1 &
 
 # background
-feh --bg-scale ../wallpaper.jpeg &
+feh --bg-scale ../wallpaper.png &
 
 # progams to autostart
 #urxvtd &
 nm-applet &
-#volumeicon &
+volumeicon &
 xfce4-power-manager &
 #dwm_bar.sh &
