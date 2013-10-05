@@ -13,7 +13,8 @@
 (defvar my-packages '(auctex evil magit textmate yasnippet
                              color-theme-sanityinc-tomorrow
                              auto-complete autopair dtrt-indent smex
-                             haskell-mode jedi clojure-mode nrepl paredit)
+                             haskell-mode jedi clojure-mode nrepl paredit
+                             ir-black-theme base16-theme)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -29,9 +30,9 @@
 
 ;; gotta look sexy
 (setq evil-default-cursor t)
-(set-frame-font "Terminus 12")
-(load-theme 'sanityinc-tomorrow-night t)
-(when (display-graphic-p)
+(set-frame-font "Gohufont 11")
+(load-theme 'ir-black t)
+(unless (display-graphic-p)
   (menu-bar-mode -1))
 
 (setq make-backup-files nil)

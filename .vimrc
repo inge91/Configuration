@@ -1,4 +1,4 @@
-" ===== Basic settings ===== "
+" ===== Basic mettings ===== "
 set nocompatible
 set incsearch
 set nohlsearch
@@ -62,8 +62,8 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 set background=dark
-colorscheme base16-chalk
-set gfn=Terminus\ 12
+colorscheme ir_black
+set gfn=Gohufont\ 11
 
 
 " ===== Plugin settings ===== "
@@ -88,5 +88,5 @@ let g:clang_close_preview = 1
 " lightline settings
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
+      \ 'colorscheme': 'landscape',
       \ }

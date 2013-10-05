@@ -17,11 +17,11 @@ URxvt*scrollTtyKeypress:    true
 URxvt.depth: 32
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Terminus-12
+URxvt.font:xft:Gohufont-11
 
 ! xterm settings
 xterm*termName: xterm-256color
-xterm*faceName: Terminus:size=12
+xterm*faceName: Gohufont:size=11
 xterm*scrollBar: false
 
 ! terminal colours
