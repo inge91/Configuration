@@ -70,7 +70,7 @@ task_urgent_icon_asb = 100 0 0
 task_iconified_icon_asb = 70 0 0
 
 # Fonts
-task_font = Terminus 9
+task_font = Gohufont 12
 task_font_color = #719f9f 100
 task_active_font_color = #ff6565 100
 task_urgent_font_color = #FFFFFF 100
@@ -87,7 +87,7 @@ systray_icon_asb = 100 0 0
 
 # Clock
 time1_format = %H.%M
-time1_font = Envy Code R 12
+time1_font = Gohufont 12
 #time2_format = %A %d %B
 #time2_font = sans 6
 clock_font_color = #ffffff 100
