@@ -54,6 +54,7 @@ NeoBundle 'LaTeX-Box'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'itchyny/landscape.vim'
+NeoBundle 'octol/vim-cpp-enhanced-highlight'
 
 NeoBundleCheck
 
