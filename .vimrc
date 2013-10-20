@@ -63,7 +63,7 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 set background=dark
-colorscheme jellybeans
+colorscheme mirodark
 set gfn=Gohufont\ 11
 
 
@@ -85,5 +85,5 @@ let g:clang_close_preview = 1
 " lightline settings
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
+      \ 'colorscheme': 'landscape',
       \ }
