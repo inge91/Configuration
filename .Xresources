@@ -16,45 +16,43 @@ URxvt*scrollWithBuffer:     true
 URxvt*scrollTtyKeypress:    true
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Gohufont-11
+URxvt.font:xft:Envy Code R-10
 
 ! xterm settings
 xterm*termName: xterm-256color
-xterm*faceName: Gohufont:size=11
+xterm*faceName: Envy Code R:size=10
 xterm*scrollBar: false
-!
-! Terminal Color Scheme: dark
-!
-! Maintainer: Jason W Ryan <http://jasonwryan.com/>
-!
-! higher contrast background
-!*background: #000000
-*background: #121212
-*foreground: #999999
-! black dark/light
-! higher contrast black dark/light
-!*color0:     #121212
-!*color8:     #3d3d3d
-*color0:     #3d3d3d
-*color8:     #5e5e5e
-! red dark/light
-*color1:     #8a2f58
-*color9:     #cf4f88
-! green dark/light
-*color2:     #287373
-*color10:    #53a6a6
-! yellow dark/light
-*color3:     #914e89
-*color11:    #bf85cc
-! blue dark/light
-*color4:     #395573
-*color12:    #4779b3
-! magenta dark/light
-*color5:     #5e468c
-*color13:    #7f62b3
-! cyan dark/light
-*color6:     #2b7694
-*color14:    #47959e
-! white dark/light
-*color7:     #899ca1
-*color15:    #c0c0c0
+
+! terminal colours
+URxvt*foreground: #D7D0C7
+URxvt*background: #151515
+
+!black
+URxvt*color0: #333333
+URxvt*color8: #404040
+!red
+URxvt*color1: #E84F4F
+URxvt*color9: #D23D3D
+!green
+URxvt*color2: #B8D68C
+URxvt*color10: #A0CF5D
+!yellow
+URxvt*color3: #E1AA5D
+URxvt*color11: #F39D21
+!blue
+URxvt*color4: #7DC1CF
+URxvt*color12: #4E9FB1
+!magenta
+URxvt*color5: #9B64FB
+URxvt*color13: #8542FF
+!cyan
+URxvt*color6: #6D878D
+URxvt*color14: #42717B
+!white
+URxvt*color7: #dddddd
+URxvt*color15: #dddddd
+
+URxvt*borderColor: #151515
+URxvt*colorBD: #ffffff
+URxvt*cursorColor: #ff8939
+URxvt*cursorColor2: #151515 ir_black

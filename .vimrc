@@ -43,17 +43,12 @@ NeoBundle 'majutsushi/tagbar'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'godlygeek/tabular'
-NeoBundle 'mileszs/ack.vim'
 NeoBundle 'jiangmiao/auto-pairs'
-NeoBundle 'xaviershay/tslime.vim'
 NeoBundle 'Rip-Rip/clang_complete'
 NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'VimClojure'
 NeoBundle 'LaTeX-Box'
 
-NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'itchyny/landscape.vim'
 NeoBundle 'octol/vim-cpp-enhanced-highlight'
 
 NeoBundleCheck
@@ -63,8 +58,10 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 set background=dark
-colorscheme mirodark
-set gfn=Gohufont\ 11
+if has('gui_running')
+  colorscheme koprii
+endif
+set gfn=Envy\ Code\ R\ 10
 
 
 " ===== Plugin settings ===== "
