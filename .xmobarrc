@@ -1,16 +1,16 @@
 Config { font = "xft:Terminus:size=12"
-       , bgColor = "black"
-       , fgColor = "grey"
-       , position = Top
-       , lowerOnStart = True
-       , commands = [ Run Network "eth0" ["-L","0","-H","32","--normal","green","--high","red"] 10
-                    , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
+       , bgColor = "#151515"
+       , fgColor = "#888888"
+       , position = TopW L 95
+       , commands = [ Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
                     , Run Memory ["-t","Mem: <usedratio>%"] 10
                     , Run Swap [] 10
                     , Run Com "uname" ["-s","-r"] "" 36000
                     , Run Date "%a %b %_d %Y %H:%M" "date" 10
+                    , Run StdinReader
+                    , Run Com "cmus-remote -C status | grep ^stream | cut -d' ' -f2-" [] "cmus" 100
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%cpu% | %memory% * %swap% | %eth0% }{ <fc=#ee9a00>%date%</fc>| %uname%"
+       , template = "%StdinReader% }{ %cpu% | %memory% * %swap%   Now playing: <fc=#8787af>%cmus%</fc>   <fc=#799d6a>%date%</fc>"
        }

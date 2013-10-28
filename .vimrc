@@ -58,10 +58,8 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 set background=dark
-if has('gui_running')
-  colorscheme ir_black
-endif
-set gfn=Terminus\ 10
+colorscheme jellybeans
+set gfn=Terminus\ 12
 
 
 " ===== Plugin settings ===== "
@@ -82,5 +80,5 @@ let g:clang_close_preview = 1
 " lightline settings
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'landscape',
+      \ 'colorscheme': 'jellybeans',
       \ }

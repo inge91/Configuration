@@ -18,3 +18,4 @@ ln -s $(pwd)/tint2 ~/.config/
 
 ln -s $(pwd)/.xmobarrc ~
 ln -s $(pwd)/.xmonad ~
+ln -s $(pwd)/.xinitrc ~
