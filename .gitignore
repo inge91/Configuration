@@ -9,3 +9,8 @@
 .vim/undodir
 .vim/.netrwhist
 .vim/bundle/*
+.xmonad/xmonad.{errors,hi,o}
+.xmonad/xmonad-*
+.xmonad/xmonad.errors
+.xmonad/xmonad.hi
+.xmonad/xmonad.o

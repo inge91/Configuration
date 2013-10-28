@@ -15,4 +15,6 @@ ln -s $(pwd)/.dwm ~
 
 ln -s $(pwd)/openbox ~/.config/
 ln -s $(pwd)/tint2 ~/.config/
-ln -s $(pwd)/awesome ~/.config/
+
+ln -s $(pwd)/.xmobarrc ~
+ln -s $(pwd)/.xmonad ~

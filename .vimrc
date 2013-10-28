@@ -59,9 +59,9 @@ filetype plugin indent on
 " ===== Appearance ===== "
 set background=dark
 if has('gui_running')
-  colorscheme koprii
+  colorscheme ir_black
 endif
-set gfn=Envy\ Code\ R\ 10
+set gfn=Terminus\ 10
 
 
 " ===== Plugin settings ===== "
