@@ -1,18 +1,21 @@
 import XMonad
-import XMonad.Layout.Spacing
 import XMonad.Layout.NoBorders
+import XMonad.Layout.LayoutHints
 import XMonad.Hooks.DynamicLog  
 import XMonad.Hooks.ManageDocks  
 
-myLayout = tiled ||| noBorders Full
+myLayout = layoutHints tiled ||| noBorders Full
     where
-        tiled = spacing 5 $ Tall nmaster delta ratio
+        tiled = Tall nmaster delta ratio
         nmaster = 1
         ratio = 1/2
         delta = 5/100
 
 myBar = "xmobar"
 myPP = xmobarPP
+    { ppCurrent = xmobarColor "#96CBFE" "" . wrap "[" "]"
+    , ppTitle   = xmobarColor "#A8FF60" "" . wrap "" ""
+}
 myToggleStruts XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
 
 main = xmonad =<< statusBar myBar myPP myToggleStruts defaultConfig
@@ -21,6 +24,6 @@ main = xmonad =<< statusBar myBar myPP myToggleStruts defaultConfig
     , borderWidth        = 2
     , layoutHook         = myLayout
     , manageHook         = manageDocks <+> manageHook defaultConfig
-    , normalBorderColor  = "#333333"
-    , focusedBorderColor = "#8542FF"
+    , normalBorderColor  = "#7C7C7C"
+    , focusedBorderColor = "#FF73FD"
     }

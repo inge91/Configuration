@@ -1,6 +1,6 @@
 Config { font = "xft:Terminus:size=12"
-       , bgColor = "#151515"
-       , fgColor = "#888888"
+       , bgColor = "#000000"
+       , fgColor = "#ffffff"
        , position = TopW L 95
        , commands = [ Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
                     , Run Memory ["-t","Mem: <usedratio>%"] 10

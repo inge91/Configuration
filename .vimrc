@@ -58,7 +58,7 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 set background=dark
-colorscheme jellybeans
+colorscheme ir_black
 set gfn=Terminus\ 12
 
 
