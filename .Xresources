@@ -1,3 +1,4 @@
+!! Only use this when not using infinality rendering
 ! Xft font settings
 ! Xft.autohint: 0
 ! Xft.lcdfilter: lcddefault
@@ -18,28 +19,35 @@ URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
 URxvt.font:xft:Terminus-12
 
-! xterm settings
-xterm*termName: xterm-256color
-xterm*faceName: Terminus:size=12
-xterm*scrollBar: false
+URxvt*foreground: #D7D0C7
+URxvt*background: #151515
 
-URxvt.background: #000000
-URxvt.foreground: #ffffff
-URxvt.color0: #7C7C7C
-URxvt.color1: #e18964
-URxvt.color2: #a8ff60
-URxvt.color3: #ffffb6
-URxvt.color4: #6699cc
-URxvt.color5: #ff73fd
-URxvt.color6: #96cdfe
-URxvt.color7: #eeeeee
-URxvt.color8: #7C7C7C
-URxvt.color9: #e18964
-URxvt.color10: #a8ff60
-URxvt.color11: #ffffb6
-URxvt.color12: #6699cc
-URxvt.color13: #ff73fd
-URxvt.color14: #96cdfe
-URxvt.color15: #eeeeee
+!black
+URxvt*color0: #333333
+URxvt*color8: #404040
+!red
+URxvt*color1: #E84F4F
+URxvt*color9: #D23D3D
+!green
+URxvt*color2: #B8D68C
+URxvt*color10: #A0CF5D
+!yellow
+URxvt*color3: #E1AA5D
+URxvt*color11: #F39D21
+!blue
+URxvt*color4: #7DC1CF
+URxvt*color12: #4E9FB1
+!magenta
+URxvt*color5: #9B64FB
+URxvt*color13: #8542FF
+!cyan
+URxvt*color6: #6D878D
+URxvt*color14: #42717B
+!white
+URxvt*color7: #dddddd
+URxvt*color15: #dddddd
 
-
+URxvt*borderColor: #151515
+URxvt*colorBD: #ffffff
+URxvt*cursorColor: #ff8939
+URxvt*cursorColor2: #151515

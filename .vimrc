@@ -3,7 +3,6 @@ set nocompatible
 set incsearch
 set nohlsearch
 set nobackup
-set guioptions=
 set textwidth=80
 set linebreak
 set undodir=~/.vim/undodir
@@ -58,8 +57,12 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 set background=dark
-colorscheme ir_black
-set gfn=Terminus\ 12
+colorscheme koprii
+if has('gui_running')
+  set guioptions=
+  set guiheadroom=0
+  set gfn=Terminus\ 12
+endif
 
 
 " ===== Plugin settings ===== "

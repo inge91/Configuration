@@ -10,7 +10,7 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(auctex evil magit textmate yasnippet
+(defvar my-packages '(auctex evil yasnippet
                              color-theme-sanityinc-tomorrow
                              auto-complete autopair dtrt-indent smex
                              haskell-mode jedi clojure-mode nrepl paredit
@@ -30,8 +30,8 @@
 
 ;; gotta look sexy
 (setq evil-default-cursor t)
-(set-frame-font "Gohufont 11")
-(load-theme 'ir-black t)
+(set-frame-font "Terminus 12")
+(load-theme 'dotshare t)
 (unless (display-graphic-p)
   (menu-bar-mode -1))
 
@@ -66,14 +66,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files (quote ("~/Dropbox/Org/thesis.org")))
  '(preview-gs-options (quote ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4"))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 (require 'yasnippet)
 (require 'auto-complete-config)
@@ -81,6 +74,7 @@
 (require 'autopair)
 (require 'dtrt-indent)
 (require 'smex)
+(require 'auto-complete-clang-async)
 
 (ac-config-default)
 
@@ -98,7 +92,6 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
-(require 'auto-complete-clang-async)
 
 ;; clang complete async setup
 (defun ac-cc-mode-setup ()
@@ -115,13 +108,5 @@
 
 (my-ac-config)
 
-(require 'textmate)
-(textmate-mode)
-(add-hook 'org-mode-hook (lambda () (textmate-mode 0)))
-
 (add-hook 'Haskell-mode-hook (lambda () (setq evil-auto-indent nil)))
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
-
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:setup-keys t)
-(setq jedi:complete-on-dot t)

@@ -1,7 +1,7 @@
 Config { font = "xft:Terminus:size=12"
        , bgColor = "#000000"
        , fgColor = "#ffffff"
-       , position = TopW L 95
+       , position = Top
        , commands = [ Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
                     , Run Memory ["-t","Mem: <usedratio>%"] 10
                     , Run Swap [] 10
@@ -12,5 +12,5 @@ Config { font = "xft:Terminus:size=12"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }{ %cpu% | %memory% * %swap%   Now playing: <fc=#8787af>%cmus%</fc>   <fc=#799d6a>%date%</fc>"
+       , template = "%StdinReader% }{ %cpu% | %memory% * %swap%   Now playing: <fc=#7DC1CF>%cmus%</fc>   <fc=#A0CF5D>%date%</fc>"
        }
