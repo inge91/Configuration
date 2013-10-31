@@ -1,14 +1,14 @@
-Config { font = "xft:Terminus:size=12"
-       , bgColor = "#000000"
-       , fgColor = "#ffffff"
-       , position = Top
+Config { font = "xft:Source Code Pro:size=10"
+       , bgColor = "#151515"
+       , fgColor = "#D7D0C7"
+       , position = TopW L 95
        , commands = [ Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
                     , Run Memory ["-t","Mem: <usedratio>%"] 10
                     , Run Swap [] 10
                     , Run Com "uname" ["-s","-r"] "" 36000
                     , Run Date "%a %b %_d %Y %H:%M" "date" 10
                     , Run StdinReader
-                    , Run Com "cmus-remote -C status | grep ^stream | cut -d' ' -f2-" [] "cmus" 100
+                    , Run Com "/home/maarten/bin/cmus_current_track.sh" [] "cmus" 100
                     ]
        , sepChar = "%"
        , alignSep = "}{"

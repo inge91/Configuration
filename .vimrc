@@ -61,7 +61,7 @@ colorscheme koprii
 if has('gui_running')
   set guioptions=
   set guiheadroom=0
-  set gfn=Terminus\ 12
+  set gfn=Source\ Code\ Pro\ 10
 endif
 
 

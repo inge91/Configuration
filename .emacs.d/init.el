@@ -30,7 +30,7 @@
 
 ;; gotta look sexy
 (setq evil-default-cursor t)
-(set-frame-font "Terminus 12")
+(set-frame-font "Source Code Pro 10")
 (load-theme 'dotshare t)
 (unless (display-graphic-p)
   (menu-bar-mode -1))
@@ -92,21 +92,9 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
-
-;; clang complete async setup
-(defun ac-cc-mode-setup ()
-  (setq ac-clang-complete-executable "~/.emacs.d/local/clang-complete")
-  (setq ac-sources '(ac-source-clang-async))
-  (ac-clang-launch-completion-process)
-)
-
-(defun my-ac-config ()
-  (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
-  (add-hook 'c++-mode-common-hook 'ac-cc-mode-setup)
-  (add-hook 'auto-complete-mode-hook 'ac-common-setup)
-  (global-auto-complete-mode t))
-
-(my-ac-config)
+(require 'textmate)
+(textmate-mode)
+(add-hook 'org-mode-hook (lambda () (textmate-mode 0)))
 
 (add-hook 'Haskell-mode-hook (lambda () (setq evil-auto-indent nil)))
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)

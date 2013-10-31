@@ -23,7 +23,7 @@ myToggleStruts XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
 
 main = xmonad =<< statusBar myBar myPP myToggleStruts defaultConfig
     { terminal           = "urxvt"
-    , modMask            = mod1Mask
+    , modMask            = mod4Mask
     , borderWidth        = 2
     , layoutHook         = myLayout
     , manageHook         = manageDocks <+> manageHook defaultConfig

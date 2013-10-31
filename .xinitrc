@@ -24,9 +24,9 @@ xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
 xrdb ~/.Xresources
 
 # wallpaper
-feh --bg-tile ~/Pictures/MbrDNrg.png
+feh --bg-tile ~/.dwm/flowers.png
 
 # system tray
-trayer --edge top --align right --widthtype percent --width 5 --height 29 --tint 0x151515 --transparent true --alpha 0 &
+trayer --edge top --align right --widthtype percent --width 5 --height 22 --tint 0x151515 --transparent true --alpha 0 &
 
 exec xmonad

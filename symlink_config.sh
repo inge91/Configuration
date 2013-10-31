@@ -19,3 +19,7 @@ ln -s $(pwd)/tint2 ~/.config/
 ln -s $(pwd)/.xmobarrc ~
 ln -s $(pwd)/.xmonad ~
 ln -s $(pwd)/.xinitrc ~
+
+
+[ -d ~/bin ] || mkdir ~/bin
+ln -s $(pwd)/cmus_current_track.sh ~/bin/
