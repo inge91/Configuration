@@ -57,7 +57,7 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 set background=dark
-colorscheme koprii
+colorscheme jellybeans
 if has('gui_running')
   set guioptions=
   set guiheadroom=0

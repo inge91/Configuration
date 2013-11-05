@@ -1,3 +1,5 @@
+*.swp
+
 .emacs.d/ac-comphist.dat
 .emacs.d/elpa/archives
 .emacs.d/auto-save-list
@@ -5,6 +7,12 @@
 .emacs.d/.smex-items
 .emacs.d/backups
 .emacs.d/places
+.emacs.d/el-get
+.emacs.d/el-get-init/*.elc
+.emacs.d/ido*
+
+fonts.dir
+fonts.scale
 
 .vim/undodir
 .vim/.netrwhist

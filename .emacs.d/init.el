@@ -1,40 +1,37 @@
-;;;;;; ELPA ;;;;;;;
-(require 'package)
+; el-get settings
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")))
-(package-initialize)
+; make sure it's installed
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+    (let (el-get-master-branch)
+      (goto-char (point-max))
+      (eval-print-last-sexp))))
 
-(when (not package-archive-contents)
-  (package-refresh-contents))
-
-;; Add in your own as you wish:
-(defvar my-packages '(auctex evil yasnippet
-                             color-theme-sanityinc-tomorrow
-                             auto-complete autopair dtrt-indent smex
-                             haskell-mode jedi clojure-mode nrepl paredit
-                             ir-black-theme base16-theme)
-  "A list of packages to ensure are installed at launch.")
+; make sure my favorite packages are installed
+(defvar my-packages '(auctex yasnippet auto-complete autopair dtrt-indent
+			     smex haskell-mode))
 
 (dolist (p my-packages)
-  (when (not (package-installed-p p))
-    (package-install p)))
+  (when (not (el-get-package-exists-p p))
+    (el-get-install p)))
+
+(setq el-get-user-package-directory "~/.emacs.d/el-get-init/")
+(el-get 'sync)
 
 ;;;;;; local packages ;;;;;;
 (add-to-list 'load-path "~/.emacs.d/local")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/local/themes")
 
-;; enable evil mode
-(evil-mode 1)
-
-;; gotta look sexy
-(setq evil-default-cursor t)
+; appearance settings
 (set-frame-font "Source Code Pro 10")
-(load-theme 'dotshare t)
 (unless (display-graphic-p)
   (menu-bar-mode -1))
+(load-theme 'underwater t)
 
+; behaviour settings
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 (setq-default tab-width 4)
@@ -50,51 +47,23 @@
 (set-fringe-style -1)
 (tooltip-mode -1)
 
-;; linebreak
+; linebreak
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 (set-fill-column 80)
 
-;; scroll by lane
+; scroll by line
 (setq scroll-step            1
       scroll-conservatively  10000)
 
-;; auto-indent with enter
+; auto-indent with enter
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(preview-gs-options (quote ("-q" "-dNOPAUSE" "-DNOPLATFONTS" "-dPrinted" "-dTextAlphaBits=4" "-dGraphicsAlphaBits=4"))))
-
-(require 'yasnippet)
-(require 'auto-complete-config)
+; built-in packages
+; ido
 (require 'ido)
-(require 'autopair)
-(require 'dtrt-indent)
-(require 'smex)
-(require 'auto-complete-clang-async)
-
-(ac-config-default)
-
-(yas/global-mode t)
-(ido-mode t)
-(autopair-global-mode)
-(dtrt-indent-mode t)
-
+(ido-mode 1)
 (setq ido-enable-flex-matching t)
+
+; org
 (setq org-hide-emphasis-markers t)
-
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
-(require 'textmate)
-(textmate-mode)
-(add-hook 'org-mode-hook (lambda () (textmate-mode 0)))
-
-(add-hook 'Haskell-mode-hook (lambda () (setq evil-auto-indent nil)))
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+(setq org-agenda-files '("~/Dropbox/Org"))

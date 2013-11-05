@@ -1,0 +1,1 @@
+(dtrt-indent-mode t)
