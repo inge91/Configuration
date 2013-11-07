@@ -1,18 +1,19 @@
+import qualified Data.Map as M
+
 import XMonad
 
 import XMonad.Layout.NoBorders
 import XMonad.Layout.Spacing
-import XMonad.Layout.Grid
+import XMonad.Layout.ThreeColumns
+import XMonad.Layout.ResizableTile
 
 import XMonad.Hooks.DynamicLog  
 import XMonad.Hooks.ManageDocks  
 
-myLayout = spacing 5 (tiled ||| Grid) ||| noBorders Full
+myLayout = smartSpacing 7 (tiled ||| threecol) ||| noBorders Full
     where
-        tiled = Tall nmaster delta ratio
-        nmaster = 1
-        ratio = 1/2
-        delta = 5/100
+        tiled = ResizableTall 1 (3/100) (1/2) []
+        threecol = ThreeColMid 1 (3/100) (1/2)
 
 myBar = "xmobar"
 myPP = xmobarPP
@@ -22,11 +23,18 @@ myPP = xmobarPP
 myToggleStruts XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
 
 main = xmonad =<< statusBar myBar myPP myToggleStruts defaultConfig
-    { terminal           = "urxvt"
+    { terminal           = "xcwd | xargs urxvt -cd"
     , modMask            = mod4Mask
     , borderWidth        = 2
     , layoutHook         = myLayout
     , manageHook         = manageDocks <+> manageHook defaultConfig
-    , normalBorderColor  = "#151515"
-    , focusedBorderColor = "#9B64FB"
+    , normalBorderColor  = "#EEEEEE"
+    , focusedBorderColor = "#FF0000"
+    , keys               = myKeys <+> keys defaultConfig
     }
+
+
+myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList
+    [ ((modm,               xK_z), sendMessage MirrorShrink)
+    , ((modm,               xK_a), sendMessage MirrorExpand)
+    ]
