@@ -12,8 +12,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 # set some X stuff
-xset +fp ~/.fonts
-xset fp rehash
+xset +fp ~/.fonts/t && xset fp rehash
 xset +dpms
 xset dpms 0 0 300
 xset r rate 250 25
@@ -24,9 +23,11 @@ xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
 xrdb ~/.Xresources
 
 # wallpaper
-feh --bg-tile ~/.dwm/flowers.png
+feh --bg-scale ~/.dwm/landscape.jpg
 
 # system tray
-trayer --edge top --align right --widthtype percent --width 5 --height 22 --tint 0x151515 --transparent true --alpha 0 &
+trayer --edge top --align right --widthtype pixel --width 100 --height 18 --tint 0x151515 --transparent true --alpha 0 &
+nm-applet &
+xfce4-power-manager &
 
 exec xmonad
