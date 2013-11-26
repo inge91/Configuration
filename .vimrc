@@ -8,10 +8,11 @@ set linebreak
 set undodir=~/.vim/undodir
 set undofile
 
-" default indentation: 2 spaces
+" default indentation: 4 spaces
 " in existing files, indentation is set by the vim-sleuth plugin
 set expandtab
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=0
 
 " make the autocomplete match the longest substring, and display even if there's
 " only one match
@@ -57,11 +58,11 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 set background=dark
-colorscheme jellybeans
+colorscheme xoria256
 if has('gui_running')
   set guioptions=
   set guiheadroom=0
-  set gfn=Source\ Code\ Pro\ 10
+  set gfn=Cousine\ 9
 endif
 
 

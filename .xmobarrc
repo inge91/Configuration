@@ -1,4 +1,4 @@
-Config { font = "xft:ohsnap-11"
+Config { font = "xft:Cousine-9"
        , bgColor = "#151515"
        , fgColor = "#D7D0C7"
        , position = TopP 0 100

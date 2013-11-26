@@ -1,12 +1,12 @@
 ! Xft font settings
 ! Use when not using Infinality rendering
-!Xft.autohint: 1
-!Xft.lcdfilter: lcddefault
-!Xft.hintstyle: hintslight
-!Xft.hinting: 1
-!Xft.antialias: 1
-!Xft.dpi: 96
-!Xft.rgba: rgb
+Xft.autohint: 1
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.dpi: 96
+Xft.rgba: rgb
 
 ! urxvt settings
 URxvt*termName: rxvt-256color
@@ -17,6 +17,6 @@ URxvt*scrollWithBuffer:     true
 URxvt*scrollTtyKeypress:    true
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Source Code Pro-10
+URxvt.font:xft:Cousine-9
 
-#include "/home/maarten/.config/termcolors/jellybeans"
+#include "/home/maarten/.config/termcolors/sexcolors"
