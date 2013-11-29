@@ -1,4 +1,4 @@
-" ===== Basic mettings ===== "
+" ===== Basic settings ===== "
 set nocompatible
 set incsearch
 set nohlsearch
@@ -48,6 +48,8 @@ NeoBundle 'Rip-Rip/clang_complete'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'LaTeX-Box'
 
+NeoBundle 'dag/vim2hs'
+
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'octol/vim-cpp-enhanced-highlight'
 
@@ -55,14 +57,13 @@ NeoBundleCheck
 
 filetype plugin indent on
 
-
 " ===== Appearance ===== "
 set background=dark
 colorscheme xoria256
 if has('gui_running')
   set guioptions=
   set guiheadroom=0
-  set gfn=Cousine\ 9
+  set gfn=Inconsolata\ 10.5
 endif
 
 

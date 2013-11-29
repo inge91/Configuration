@@ -12,12 +12,13 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 # set some X stuff
-xset +fp ~/.fonts/t && xset fp rehash
+xset +fp /usr/share/fonts/local && xset fp rehash
 xset +dpms
 xset dpms 0 0 300
 xset r rate 250 25
 xset m 0 0
 
+xsetroot -bg black
 xsetroot -cursor_name left_ptr
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
 xrdb ~/.Xresources
@@ -26,8 +27,11 @@ xrdb ~/.Xresources
 feh --bg-scale ~/.dwm/landscape.jpg
 
 # system tray
-trayer --edge top --align right --widthtype pixel --width 100 --height 18 --tint 0x151515 --transparent true --alpha 0 &
-nm-applet &
-xfce4-power-manager &
+if [ "$1" = xmonad ]; then
+  trayer --edge top --align right --widthtype pixel --width 100 --height 19 --tint 0x151515 --transparent true --alpha 0 &
+  nm-applet &
+  xfce4-power-manager &
+  volumeicon &
+fi
 
-exec xmonad
+exec $1

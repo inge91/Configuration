@@ -17,6 +17,6 @@ URxvt*scrollWithBuffer:     true
 URxvt*scrollTtyKeypress:    true
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Cousine-9
+URxvt.font:xft:Inconsolata-10.5
 
 #include "/home/maarten/.config/termcolors/sexcolors"
