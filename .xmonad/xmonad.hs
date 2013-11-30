@@ -18,11 +18,11 @@ myLayout = smartBorders $ tiled ||| Grid ||| Full
 main = xmonad =<< xmobar defaultConfig
     { terminal           = "xcwd | xargs urxvt -cd"
     , modMask            = mod4Mask
-    , borderWidth        = 2
+    , borderWidth        = 4
     , layoutHook         = myLayout
     , manageHook         = manageDocks <+> manageHook defaultConfig
-    , normalBorderColor  = "#202020"
-    , focusedBorderColor = "#9B64FB"
+    , normalBorderColor  = "#707070"
+    , focusedBorderColor = "#46a4ff"
     , keys               = myKeys <+> keys defaultConfig
     }
 
