@@ -59,11 +59,11 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 set background=dark
-colorscheme xoria256
+colorscheme molokai
 if has('gui_running')
   set guioptions=
   set guiheadroom=0
-  set gfn=Inconsolata\ 10.5
+  set gfn=Meslo\ LG\ S\ 9
 endif
 
 

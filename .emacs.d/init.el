@@ -10,9 +10,10 @@
 
 ;; Add in your own as you wish:
 (defvar my-packages '(auctex evil yasnippet
-                             color-theme-sanityinc-tomorrow
-                             autopair dtrt-indent smex
-                             )
+                      color-theme-sanityinc-tomorrow
+                      molokai-theme
+                      autopair dtrt-indent smex
+                      )
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -30,8 +31,8 @@
 
 ;; appearance
 (setq evil-default-cursor t)
-(set-frame-font "Inconsolata-g 9")
-(load-theme 'sanityinc-tomorrow-bright t)
+(set-frame-font "Meslo LG S 9")
+(load-theme 'molokai t)
 (unless (display-graphic-p)
   (menu-bar-mode -1))
 

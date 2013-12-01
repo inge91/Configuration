@@ -17,6 +17,6 @@ URxvt*scrollWithBuffer:     true
 URxvt*scrollTtyKeypress:    true
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Inconsolata-10.5
+URxvt.font:xft:Meslo LG S-9
 
-#include "/home/maarten/.config/termcolors/sexcolors"
+#include "/home/maarten/.config/termcolors/molokai"
