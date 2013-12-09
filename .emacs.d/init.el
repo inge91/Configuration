@@ -13,6 +13,7 @@
                       color-theme-sanityinc-tomorrow
                       molokai-theme
                       autopair dtrt-indent smex
+                      auto-complete haskell-mode
                       )
   "A list of packages to ensure are installed at launch.")
 
@@ -28,11 +29,12 @@
 (require 'autopair)
 (require 'dtrt-indent)
 (require 'smex)
+(require 'auto-complete-config)
 
 ;; appearance
 (setq evil-default-cursor t)
-(set-frame-font "Meslo LG S 9")
-(load-theme 'molokai t)
+(set-frame-font "Tamsyn 12")
+(load-theme 'sanityinc-tomorrow-night t)
 (unless (display-graphic-p)
   (menu-bar-mode -1))
 
@@ -60,6 +62,7 @@
 (ido-mode t)
 (autopair-global-mode)
 (dtrt-indent-mode t)
+(ac-config-default)
 
 (setq ido-enable-flex-matching t)
 (setq org-hide-emphasis-markers t)
@@ -69,3 +72,5 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)

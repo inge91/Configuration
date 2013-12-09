@@ -59,11 +59,11 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 set background=dark
-colorscheme molokai
+colorscheme hybrid
 if has('gui_running')
   set guioptions=
   set guiheadroom=0
-  set gfn=Meslo\ LG\ S\ 9
+  set gfn=Tamsyn\ 12
 endif
 
 

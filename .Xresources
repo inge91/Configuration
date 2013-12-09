@@ -1,6 +1,6 @@
 ! Xft font settings
 ! Use when not using Infinality rendering
-Xft.autohint: 1
+Xft.autohint: 0
 Xft.lcdfilter: lcddefault
 Xft.hintstyle: hintslight
 Xft.hinting: 1
@@ -17,6 +17,6 @@ URxvt*scrollWithBuffer:     true
 URxvt*scrollTtyKeypress:    true
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Meslo LG S-9
+URxvt.font:xft:Tamsyn-12
 
-#include "/home/maarten/.config/termcolors/molokai"
+#include "/home/maarten/.config/termcolors/tomorrow-modded"
