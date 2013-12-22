@@ -11,7 +11,8 @@
 ;; Add in your own as you wish:
 (defvar my-packages '(auctex evil yasnippet
                       color-theme-sanityinc-tomorrow
-                      molokai-theme
+                      ujelly-theme projectile
+                      smart-mode-line
                       autopair dtrt-indent smex
                       auto-complete haskell-mode
                       )
@@ -33,7 +34,7 @@
 
 ;; appearance
 (setq evil-default-cursor t)
-(set-frame-font "Tamsyn 12")
+(set-frame-font "Source Code Pro 10")
 (load-theme 'sanityinc-tomorrow-night t)
 (unless (display-graphic-p)
   (menu-bar-mode -1))
@@ -63,6 +64,7 @@
 (autopair-global-mode)
 (dtrt-indent-mode t)
 (ac-config-default)
+(projectile-global-mode)
 
 (setq ido-enable-flex-matching t)
 (setq org-hide-emphasis-markers t)
@@ -74,3 +76,6 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+
+(setq sml/theme 'dark)
+(sml/setup)
