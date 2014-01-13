@@ -10,6 +10,8 @@
 .emacs.d/el-get
 .emacs.d/el-get-init/*.elc
 .emacs.d/ido*
+.emacs.d/session*
+.emacs.d/projectile*
 
 fonts.dir
 fonts.scale

@@ -31,11 +31,12 @@
 (require 'dtrt-indent)
 (require 'smex)
 (require 'auto-complete-config)
+(require 'yasnippet)
 
 ;; appearance
 (setq evil-default-cursor t)
-(set-frame-font "Source Code Pro 10")
-(load-theme 'sanityinc-tomorrow-night t)
+(set-frame-font "Cousine 10")
+(load-theme 'base16-default-dark t)
 (unless (display-graphic-p)
   (menu-bar-mode -1))
 
@@ -45,6 +46,7 @@
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 (setq inhibit-startup-message t)
+(column-number-mode 1)
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 
@@ -65,6 +67,7 @@
 (dtrt-indent-mode t)
 (ac-config-default)
 (projectile-global-mode)
+(yas-global-mode 1)
 
 (setq ido-enable-flex-matching t)
 (setq org-hide-emphasis-markers t)

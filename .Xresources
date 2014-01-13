@@ -17,6 +17,6 @@ URxvt*scrollWithBuffer:     true
 URxvt*scrollTtyKeypress:    true
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Tamsyn-12
+URxvt.font:xft:Cousine-10
 
-#include "/home/maarten/.config/termcolors/tomorrow-modded"
+#include "/home/maarten/.config/termcolors/base16-default.dark.xresources"

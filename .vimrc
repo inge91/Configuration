@@ -46,12 +46,13 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'Rip-Rip/clang_complete'
 NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'LaTeX-Box'
+NeoBundle 'LaTeX-Box-Team/LaTeX-Box'
 
 NeoBundle 'dag/vim2hs'
 
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'octol/vim-cpp-enhanced-highlight'
+NeoBundle 'chriskempson/base16-vim'
 
 NeoBundleCheck
 
@@ -59,11 +60,11 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 set background=dark
-colorscheme hybrid
+colorscheme base16-default
 if has('gui_running')
   set guioptions=
   set guiheadroom=0
-  set gfn=Tamsyn\ 12
+  set gfn=Cousine\ 10
 endif
 
 
@@ -85,5 +86,5 @@ let g:clang_close_preview = 1
 " lightline settings
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
+      \ 'colorscheme': 'default',
       \ }

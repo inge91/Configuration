@@ -24,11 +24,11 @@ xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
 xrdb ~/.Xresources
 
 # wallpaper
-feh --bg-scale ~/.dwm/landscape.jpg
+feh --bg-scale ~/Dropbox/Pictures/greenblue.jpg
 
 # system tray
 if [ "$1" = xmonad ]; then
-  trayer --edge top --align right --widthtype pixel --width 100 --height 19 --tint 0x151515 --transparent true --alpha 0 &
+  trayer --edge top --align right --widthtype pixel --width 100 --height 20 --tint 0x151515 --transparent true --alpha 0 &
   nm-applet &
   xfce4-power-manager &
   volumeicon &
