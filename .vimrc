@@ -23,6 +23,9 @@ set completeopt=longest,menuone
 "     argument_2)
 set cino=(0
 
+" conceal characters with their unicode versions in Latex and stuff
+set conceallevel=2
+
 syntax on
 
 " ===== NeoBundle plugin manager ===== "
