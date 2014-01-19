@@ -35,7 +35,7 @@
 
 ;; appearance
 (setq evil-default-cursor t)
-(set-frame-font "Cousine 10")
+(set-frame-font "Meslo LG S 9")
 (load-theme 'base16-default-dark t)
 (unless (display-graphic-p)
   (menu-bar-mode -1))

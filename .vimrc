@@ -67,7 +67,7 @@ colorscheme base16-default
 if has('gui_running')
   set guioptions=
   set guiheadroom=0
-  set gfn=Cousine\ 10
+  set gfn=Meslo\ LG\ S\ 9
 endif
 
 

@@ -1,28 +1,8 @@
 #!/bin/sh
 
-xrdb ~/.Xresources
-
-# keyboard repeat rate
-xset r rate 250 25 &
-
-# powersavings or something
-xset +dpms
-xset dpms 0 0 300
-
-# horizontal scrolling
-synclient HorizTwoFingerScroll=1 &
-synclient TapButton1=1 &
-
-# bind escape to capslock
-xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape' &
-
-# background
-feh --bg-scale ~/.dwm/../wallpaper.png &
-
 # compositing
-compton --backend glx -cCGb
+compton --backend glx -cCG
 
 # some applications
 tint2 &
-#volumeicon &
-xfce4-power-manager &
+volumeicon &
