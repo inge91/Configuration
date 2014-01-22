@@ -19,6 +19,7 @@ fonts.scale
 .vim/undodir
 .vim/.netrwhist
 .vim/bundle/*
+!.vim/bundle/neobundle.vim
 .xmonad/xmonad.{errors,hi,o}
 .xmonad/xmonad-*
 .xmonad/xmonad.errors
