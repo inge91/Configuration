@@ -93,21 +93,21 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Terminus</name>
-      <size>9</size>
+      <name>Source Sans Pro</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Terminus</name>
-      <size>9</size>
+      <name>Source Sans Pro Semi-Bold</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
@@ -398,7 +398,7 @@
           <enabled>false</enabled>
           <name>dmenu</name>
         </startupnotify>
-        <command>dmenu_run</command>
+        <command>dmenu_run -fn "Terminus-9"</command>
       </action>
     </keybind>
     <keybind key="W-o">

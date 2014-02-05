@@ -1,3 +1,12 @@
+! Xft font settings
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.dpi: 96
+Xft.rgba: rgb
+
 ! urxvt settings
 URxvt*termName: rxvt-256color
 URxvt*loginShell: true
@@ -7,6 +16,6 @@ URxvt*scrollWithBuffer:     true
 URxvt*scrollTtyKeypress:    true
 URxvt.saveLines: 50000
 URxvt.urgentOnBell: true
-URxvt.font:xft:Meslo LG S-9
+URxvt.font:xft:Dejavu Sans Mono-9
 
 #include "/home/maarten/.config/termcolors/base16-default.dark.xresources"
