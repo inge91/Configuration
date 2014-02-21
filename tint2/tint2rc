@@ -24,11 +24,11 @@ border_color = #444444 100
 # Panel
 panel_monitor = all
 panel_position = bottom center horizontal
-panel_size = 0 20
+panel_size = 0 22
 panel_margin = -2 -2
 panel_padding = -2 0 0
 panel_dock = 0
-wm_menu = 0
+wm_menu = 1
 panel_layer = normal
 panel_background_id = 1
 
@@ -64,7 +64,7 @@ task_urgent_icon_asb = 100 0 0
 task_iconified_icon_asb = 100 0 0
 
 # Fonts
-task_font = Terminus 9
+task_font = Gohufont 10
 task_font_color = #444444 100
 task_active_font_color = #BAF617 100
 task_urgent_font_color = #FF0000 100
@@ -81,7 +81,7 @@ systray_icon_asb = 100 0 0
 
 # Clock
 time1_format = %a %d %b @ %H:%M
-time1_font = Terminus 9
+time1_font = Gohufont 10
 clock_font_color = #FFFFFF 100
 clock_padding = 5 0
 clock_background_id = 1

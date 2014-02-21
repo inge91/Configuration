@@ -63,11 +63,11 @@ filetype plugin indent on
 
 " ===== Appearance ===== "
 set background=dark
-colorscheme base16-default
+colorscheme mirodark
 if has('gui_running')
   set guioptions=
   set guiheadroom=0
-  set gfn=Dejavu\ Sans\ Mono\ 9
+  set gfn=Gohufont\ 10
 endif
 
 
@@ -91,3 +91,6 @@ set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'default',
       \ }
+
+" ultisnips
+let g:UltiSnipsUsePythonVersion = 2
