@@ -9,12 +9,13 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(auctex
-                      evil
+(defvar my-packages '(evil
+                      helm
+                      magit
+                      auctex
                       yasnippet
                       projectile
                       dtrt-indent
-                      smex
                       auto-complete
                       haskell-mode
                       latex-pretty-symbols
@@ -29,17 +30,16 @@
 (add-to-list 'load-path "~/.emacs.d/local")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/local/themes")
 
-(require 'ido)
 (require 'dtrt-indent)
-(require 'smex)
 (require 'auto-complete-config)
 (require 'yasnippet)
 (require 'latex-pretty-symbols)
+(require 'helm-config)
 
 ;; appearance
 (setq evil-default-cursor t)
-(set-frame-font "Gohufont 10")
-(load-theme 'base16-tomorrow-dark t)
+(set-frame-font "Dejavu Sans Mono 10")
+(load-theme 'zenburn t)
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (column-number-mode 1)
@@ -59,22 +59,16 @@
 
 ;; enable modes
 (evil-mode 1)
-(ido-mode t)
 (dtrt-indent-mode t)
 (ac-config-default)
 (projectile-global-mode)
 (yas-global-mode 1)
 (electric-indent-mode 1)
 (electric-pair-mode 1)
+(helm-mode 1)
 
 ;; addon settings
-(setq ido-enable-flex-matching t)
 (setq org-hide-emphasis-markers t)
 
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
+;; hooks
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
